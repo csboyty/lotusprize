@@ -39,7 +39,7 @@ get_template_part( 'column', "left" );
                         <div class="infoContainer">
                             <div class="info">
                                 <h4><?php echo $post->post_title; ?></h4>
-                                <p><?php echo $post->post_content; ?></p>
+                                <p><?php echo $post->post_cotent; ?></p>
                             </div>
                         </div>
                     </li>

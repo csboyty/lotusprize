@@ -136,6 +136,7 @@ ul{
 }
 .newsContainer{
     overflow: hidden;
+    width: 117.5%;
 }
 .newsPanel{
     width: 200%;
@@ -181,12 +182,16 @@ ul{
     line-height: 24px;
     margin:50px auto;
 }
+.article table,.article ul{
+    font-size: 14px;
+}
 .article p{
     font-size: 14px;
     line-height: 32px;
 }
 .article img{
     max-width: 100%;
+    border: none;
 }
 .return{
     cursor: pointer;
@@ -235,6 +240,21 @@ ul{
     margin-left: 280px;
     padding:0px 8% 20px 2%;
     min-height: 600px;
+}
+.rightColumn h3{
+    font-size: 18px;
+    font-weight: normal;
+    color: #1fb25a;
+}
+.rightColumn h2{
+    font-size: 26px;
+    font-weight: normal;
+    color: #1fb25a;
+}
+.rightColumn h4{
+    font-size: 14px;
+    font-weight: normal;
+    color: #1fb25a;
 }
 .rightColumn p{
     line-height: 32px;
@@ -291,13 +311,16 @@ ul{
     width:90%;
 }
 .judgeList .info h4{
-    font-size: 14px;
-    text-align: center;
+    font-size: 12px;
+    font-weight: normal;
+    color:#fff;
 }
 .judgeList .info p{
     white-space: normal;
     word-break: break-all;
     font-size: 12px;
+    line-height: 18px;
+    color:#fff;
 }
 .judgeList li:hover .infoContainer{
     top:0px;
@@ -367,6 +390,18 @@ ul{
     position: absolute;
     left:50%;
     top:50%;
+}
+
+@media screen and (max-width:1290px) {
+    .judgeList .info p{
+        height: 36px;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width:1240px) {
+    .judgeList .info p{
+        display: none;
+    }
 }
 
 

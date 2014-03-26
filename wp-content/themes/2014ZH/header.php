@@ -9,9 +9,13 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>芙蓉杯</title>
     <link type="text/css" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/frontend/src/all.css">
     <script src="<?php echo get_template_directory_uri(); ?>/js/frontend/lib/jquery-1.7.2.min.js"></script>
+    <!--[if lt IE 9]>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
     <script src="<?php echo get_template_directory_uri(); ?>/js/frontend/src/index.js"></script>
 </head>
 <body>

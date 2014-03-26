@@ -86,7 +86,9 @@ $(document).ready(function(){
                 "left":"-100%",
                 "backgroundPositionX":"70%",
                 "backgroundPositionY":"20px"
-            },1000);
+            },1000,function(){
+                $("#newsContainer").width("115%");
+            });
         });
 
         return false;
@@ -98,7 +100,7 @@ $(document).ready(function(){
             "backgroundPositionY":"20px"
         },1000,function(){
             $("#article").html("");
-            $("#newsContainer").css("overflow","hidden");
+            $("#newsContainer").css("overflow","hidden").width("117.5%");
         });
     });
 });
