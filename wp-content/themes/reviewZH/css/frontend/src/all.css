@@ -1,0 +1,377 @@
+body{
+    margin:0px;
+    padding: 0px;
+    font-family:"微软雅黑", "黑体", Arial, "Times New Roman", Verdana;;
+    color:#b5b5b5;
+    min-width: 1024px;
+    background: #fff;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    color: #b5b5b5;
+}
+a.active{
+    color:#1fb25a;
+}
+h3{
+    color: #1fb25a;
+    font-weight: normal;
+    font-size: 24px;
+}
+ul{
+    list-style: none;
+    padding:0px;
+    margin: 0px;
+}
+
+/**
+*头部
+*/
+.wpHeader{
+    background: #fff;
+    height: 130px;
+    position: relative;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+.wpHeader ul,.wpHeader li{
+    display: inline-block;
+}
+.wpHeader h1{
+    width: 267px;
+    height: 52px;
+    margin: 0px auto 20px auto;
+}
+.wpHeader h1 a{
+    font-size: 0px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url(../../../images/frontend/app/logo.png) no-repeat;
+}
+.wpHeader .rightMenu{
+    width: 10%;
+    position: absolute;
+    right: 40px;
+    top:50px;
+}
+.wpHeader .rightMenu li{
+    width: 80%;
+    text-align: center;
+}
+.wpHeader .rightMenu li a{
+    color:#FDA3AF;
+}
+.wpHeader .mainMenu{
+    width:50%;
+    margin-left: 10%;
+}
+.wpHeader .mainMenu li{
+    margin-right: 10%;
+    font-size: 14px;
+}
+.wpHeader .langMenu{
+    width: 20%;
+    margin-left: 15%;
+}
+.wpHeader .langMenu li{
+    width: 30%;
+    font-size: 14px;
+}
+.wpHeader li a:hover,.wpHeader li a.active{
+    cursor:pointer;
+    color:#1fb25a;
+}
+
+/**
+* 滚动图片
+*/
+.rollImg{
+    width: 95%;
+    margin: 20px auto 80px auto;;
+    overflow: hidden;
+    position: relative;
+    font-size: 0px;
+}
+.rollImg img{
+    width: 100%;
+}
+/*.rollImg .rollImgList{
+    white-space: nowrap;
+    position: relative;
+    left:0px;
+    font-size: 0px;
+}
+.rollImg .rollImgList li{
+    display: inline-block;
+    vertical-align: top;
+    width:100%;
+}
+.rollImg .rollImgList li img{
+    width:100%;
+}
+.rollImg .rollNumberList{
+    margin:-2% 0px 0px 5%;
+    width:70%;
+    position: relative;
+    font-size: 0px;
+}
+.rollImg .rollNumberList li{
+    display: inline-block;
+    width: 20%;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
+}
+.rollImg .rollNumberList li.active{
+    color:#1fb25a;
+}*/
+
+.content{
+    padding: 5% 13% 5% 13%;
+    background:#F6F5F4;
+}
+.newsContainer{
+    overflow: hidden;
+}
+.newsPanel{
+    width: 200%;
+    position: relative;
+    white-space: nowrap;
+    left: 0px;
+    background: url(../../../images/frontend/app/newsBg.png) no-repeat;
+    background-position: 20% 20px;
+}
+.newsPanel .column{
+    width: 50%;
+    min-height: 400px;
+    box-sizing: border-box;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.newsPanel .column:first-child + .column{
+    padding:0px  11% 0px 5%;
+}
+.newsList li{
+    height: 48px;
+    line-height: 48px;
+    font-size: 16px;
+}
+.newsList a{
+    color:#1fb25a;
+    font-size: 14px;
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    overflow: hidden;
+}
+.newsList .date{
+    font-size: 14px;
+}
+.article{
+    white-space: normal;
+    color:#787878;
+    font-size: 16px;
+    line-height: 24px;
+    margin:50px auto;
+}
+.article p{
+    font-size: 14px;
+    line-height: 32px;
+}
+.article img{
+    max-width: 100%;
+}
+.return{
+    cursor: pointer;
+    font-size: 14px;
+    color: #1fb25a;
+}
+.pagination{
+    margin-top:20px;
+    margin-left: 100px;
+}
+.pagination .page-numbers li{
+    display: inline-block;
+    margin: 0px 10px;
+    font-size: 14px;
+}
+.pagination .page-numbers a{
+    color:#1fb25a;
+}
+
+/**
+* 章程
+*/
+.ruleContent{
+    background: none;
+    width: 80%;
+    padding:0px;
+    margin:100px auto 0px auto;
+}
+.leftColumn{
+    width: 280px;
+    position: absolute;
+}
+.leftColumn ul li{
+    margin-bottom:20px;
+}
+.leftColumn ul li a:hover{
+    color:#1fb25a;
+}
+.leftColumn .ruleMenu li:first-child + li{
+    margin-top: 100px;
+}
+.leftColumn .ruleMenu li:first-child + li a{
+    color: #1fb25a;
+}
+.rightColumn{
+    margin-left: 280px;
+    padding:0px 8% 20px 2%;
+    min-height: 600px;
+}
+.rightColumn p{
+    line-height: 32px;
+    font-size: 14px;
+}
+/**
+*评委
+*/
+.judgeList{
+    padding-bottom: 80px;
+    font-size: 0px;
+}
+.judgeList .title{
+    color:#1fb25a;
+    margin-bottom: 20px;
+    margin-top:50px ;
+}
+.judgeList .title:first-child{
+    margin-top: 0px;
+}
+.judgeList li{
+    width: 20%;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 5px;
+    vertical-align: top;
+    margin:5px;
+}
+.judgeList .thumb{
+    font-size: 0px;
+}
+.judgeList .thumb img{
+    width: 100%;
+}
+.judgeList .infoContainer{
+    position: absolute;
+    top:100%;
+    background: #e26684;
+    color:#fff;
+    width: 90%;
+    height: 90%;
+    padding: 5%;
+    opacity: .8;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+    -webkit-transition: all .4s ease-out;
+    -moz-transition: all .4s ease-out;
+    -ms-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+}
+.judgeList .info{
+    position: absolute;
+    bottom:10px;
+    width:90%;
+}
+.judgeList .info h4{
+    font-size: 14px;
+    text-align: center;
+}
+.judgeList .info p{
+    white-space: normal;
+    word-break: break-all;
+    font-size: 12px;
+}
+.judgeList li:hover .infoContainer{
+    top:0px;
+}
+
+/**
+* 获奖作品
+*/
+.worksContent{
+    background:url(../../../images/frontend/app/worksBg.jpg) ;
+    box-shadow: 0px 5px 20px #999 inset;
+    padding:5% 8%;
+}
+.worksContent iframe{
+    width: 100%;
+    height: 700px;
+}
+
+.works2012Content iframe{
+    width: 100%;
+    height: 1170px;
+}
+
+/**
+*页脚
+*/
+.footer{
+    color:#1fb25a;
+    background: #F6F5F4;
+    padding:20px;
+}
+.footer p{
+    text-align: center;
+    font-size: 14px;
+    margin: 0px;
+}
+
+/**
+*404
+*/
+._404Content{
+    font-size: 40px;
+    text-align: center;
+}
+._404Content a{
+    color:#1fb25a ;
+}
+
+/**
+*遮盖层
+*/
+.blackout{
+    position: fixed;
+    display: none;
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+    line-height: 100%;
+    z-index: 9998;
+    background: #ccc;
+    opacity: .6;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+    top:0px;
+}
+.blackout .text{
+    color: #fff;
+    position: absolute;
+    left:50%;
+    top:50%;
+}
+
+
+
+
+
+
+
