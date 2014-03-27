@@ -83,7 +83,11 @@ ul{
     width: 30%;
     font-size: 14px;
 }
-.wpHeader li a:hover,.wpHeader li a.active{
+.wpHeader li a:hover{
+    cursor:pointer;
+    color:#e26684;
+}
+.wpHeader li a.active{
     cursor:pointer;
     color:#1fb25a;
 }
@@ -128,6 +132,9 @@ ul{
 .rollImg .rollNumberList li.active{
     color:#1fb25a;
 }
+.rollImg .rollNumberList li:hover{
+    color:#e26684;
+}
 
 .content{
     padding: 5% 13% 5% 13%;
@@ -170,6 +177,9 @@ ul{
     white-space: nowrap;
     display: inline-block;
     overflow: hidden;
+}
+.newsList a:hover{
+    color:#e26684;
 }
 .newsList .date{
     font-size: 14px;
@@ -227,7 +237,7 @@ ul{
     margin-bottom:20px;
 }
 .leftColumn ul li a:hover{
-    color:#1fb25a;
+    color:#e26684;
 }
 .leftColumn .ruleMenu li:first-child + li{
     margin-top: 100px;

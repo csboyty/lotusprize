@@ -5,7 +5,6 @@ body{
     color:#b5b5b5;
     min-width: 1024px;
     background: #fff;
-    letter-spacing: 1px;
     font-size: 14px;
 }
 a{
@@ -80,9 +79,13 @@ ul{
     width: 30%;
     font-size: 14px;
 }
-.wpHeader li a:hover,.wpHeader li a.active{
+.wpHeader li a.active{
     cursor:pointer;
     color:#1fb25a;
+}
+.wpHeader li a:hover{
+    cursor:pointer;
+    color:#e26684;
 }
 
 /**
@@ -175,6 +178,9 @@ ul{
     display: inline-block;
     overflow: hidden;
 }
+.newsList a:hover{
+    color:#e26684;
+}
 .newsList .date{
     font-size: 14px;
 }
@@ -231,7 +237,7 @@ ul{
     margin-bottom:20px;
 }
 .leftColumn ul li a:hover{
-    color:#1fb25a;
+    color:#e26684;
 }
 .leftColumn .ruleMenu li:first-child + li{
     margin-top: 100px;

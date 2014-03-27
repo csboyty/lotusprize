@@ -31,7 +31,7 @@ $newsId=5;
         <ul id="rollNumberList" class="rollNumberList">
             <li class="active" num="1">
                 <span>设计发现</span>
-                <p>3.10-4.10</p>
+                <p>3.10-4.30</p>
             </li>
             <li num="2">
                 <span>作品征集</span>
