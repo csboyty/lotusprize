@@ -1,7 +1,7 @@
 body{
     margin:0px;
     padding: 0px;
-    font-family:"微软雅黑", "黑体", Arial, "Times New Roman", Verdana;;
+    font-family:"微软雅黑", "黑体", Arial, "Times New Roman", Verdana;
     color:#b5b5b5;
     min-width: 1024px;
     background: #fff;
@@ -327,6 +327,8 @@ ul{
     word-break: break-all;
     font-size: 12px;
     line-height: 18px;
+    max-height:54px;
+    overflow: hidden;
     color:#fff;
 }
 .judgeList li:hover .infoContainer{
@@ -401,7 +403,7 @@ ul{
 
 @media screen and (max-width:1290px) {
     .judgeList .info p{
-        height: 36px;
+        max-height: 36px;
         overflow: hidden;
     }
 }

@@ -35,7 +35,7 @@ $newsId=5;
             </li>
             <li num="2">
                 <span>Call for Entries</span>
-                <p>4.10-6.30</p>
+                <p>5.1-6.30</p>
             </li>
             <li num="3">
                 <span>Preliminary Assessment</span>
@@ -52,7 +52,7 @@ $newsId=5;
         </ul>
     </div>
     <div class="content">
-        <h3>news</h3>
+        <h3>News</h3>
         <div class="newsContainer" id="newsContainer">
             <div class="newsPanel" id="newsPanel">
                 <div class="column">

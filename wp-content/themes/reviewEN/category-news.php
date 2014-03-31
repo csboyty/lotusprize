@@ -25,7 +25,7 @@ $newsId=5;
     </div>
 
     <div class="content">
-        <h3>news</h3>
+        <h3>News</h3>
         <div class="newsContainer" id="newsContainer">
             <div class="newsPanel" id="newsPanel">
                 <div class="column">
