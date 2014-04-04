@@ -30,7 +30,7 @@ $newsId=5;
         </ul>
         <ul id="rollNumberList" class="rollNumberList">
             <li class="active" num="1">
-                <span>D-Tour</span>
+                <span>Design Discovery</span>
                 <p>3.10-4.30</p>
             </li>
             <li num="2">
@@ -39,15 +39,15 @@ $newsId=5;
             </li>
             <li num="3">
                 <span>Preliminary Assessment</span>
-                <p>7.1-8.1</p>
+                <p>7.10-8.1</p>
             </li>
             <li num="4">
-                <span>Incubation Assessment</span>
-                <p>8.5-9.15</p>
+                <span>Incubation Assessment and Workshop</span>
+                <p>8.5-8.15</p>
             </li>
             <li num="5">
                 <span>Final Adjudication</span>
-                <p>10.5-10.10</p>
+                <p>10.8-10.10</p>
             </li>
         </ul>
     </div>

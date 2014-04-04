@@ -26,6 +26,33 @@ ul{
 }
 
 /**
+*logo
+*/
+.logo{
+    width: 275px;
+    height: 52px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+.logo a{
+    font-size: 0px;
+    top:0px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    z-index: 10;
+    opacity: 0;
+}
+.logo .object{
+    width: 280px;
+    height: 100px;
+    position: absolute;
+    top:-15px;
+    left:-2px;
+}
+/**
 *头部
 */
 .wpHeader{
@@ -38,7 +65,7 @@ ul{
 .wpHeader ul,.wpHeader li{
     display: inline-block;
 }
-.wpHeader h1{
+/*.wpHeader h1{
     width: 267px;
     height: 52px;
     margin: 0px auto 20px auto;
@@ -49,7 +76,7 @@ ul{
     height: 100%;
     display: block;
     background: url(../../../images/frontend/app/logo.png) no-repeat;
-}
+}*/
 .wpHeader .rightMenu{
     width: 10%;
     position: absolute;
@@ -120,7 +147,7 @@ ul{
 .rollImg .rollNumberList li{
     display: inline-block;
     width: auto;
-    margin-right: 5%;
+    margin-right: 3%;
     font-size: 14px;
     vertical-align: top;
     cursor: pointer;
@@ -154,7 +181,9 @@ ul{
     box-sizing: border-box;
     vertical-align: top;
     display: inline-block;
-
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 .newsPanel .column:first-child + .column{
     padding:0px  11% 0px 5%;
@@ -196,6 +225,7 @@ ul{
 }
 .article img{
     max-width: 100%;
+    height:auto;
     border: none;
 }
 .return{
@@ -235,10 +265,16 @@ ul{
 .leftColumn ul li a:hover{
     color:#e26684;
 }
-.leftColumn .ruleMenu li:first-child + li{
+/*.leftColumn .ruleMenu li:first-child + li{
     margin-top: 100px;
 }
-.leftColumn .ruleMenu li:first-child +li a{
+.leftColumn .ruleMenu li:first-child + li a{
+    color: #1fb25a;
+}*/
+.leftColumn .ruleMenu li{
+    margin-top: 100px;
+}
+.leftColumn .ruleMenu li a{
     color: #1fb25a;
 }
 .rightColumn{
@@ -272,23 +308,26 @@ ul{
 .judgeList{
     padding-bottom: 80px;
     font-size: 0px;
+    width: 80%;
+    margin:50px auto;
 }
 .judgeList .title{
     color:#1fb25a;
     margin-bottom: 20px;
     margin-top:50px ;
+    font-size:18px;
 }
 .judgeList .title:first-child{
     margin-top: 0px;
 }
 .judgeList li{
-    width: 20%;
+    width: 15%;
     position: relative;
     overflow: hidden;
     display: inline-block;
     border-radius: 5px;
     vertical-align: top;
-    margin:5px;
+    margin:0.8%;
 }
 .judgeList .thumb{
     font-size: 0px;
