@@ -12,15 +12,29 @@
     <title><?php wp_title("|",true,"right"); ?></title>
     <link type="text/css" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/frontend/src/all.css">
     <script src="<?php echo get_template_directory_uri(); ?>/js/frontend/lib/jquery-1.7.2.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/frontend/src/googleAnalytics.js"></script>
+    <!--[if lt IE 9]>
+
+    <style type="text/css">
+        .article img,.article video,.article object,.article embed{
+            margin: auto;
+            display: block;
+            border: none;
+        }
+        .article video,.article object,.article embed{
+            width:592px;
+            height:333px;
+        }
+    </style>
+    <![endif]-->
     <script src="<?php echo get_template_directory_uri(); ?>/js/frontend/src/index.js"></script>
 </head>
 <body>
 <div class="wpHeader">
     <h1 class="logo">
-        <!--<a href="<?php /*echo home_url(); */?>">logo</a>-->
-        <object data="<?php echo get_template_directory_uri(); ?>/data/header.swf" class="object">
-            <embed class="object" src="<?php echo get_template_directory_uri(); ?>/data/header.swf"></embed>
-        </object>
+        <a href="http://lotusprize.com/2014en/">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/frontend/app/rotate.gif">
+        </a>
     </h1>
     <ul class="rightMenu">
         <!--<li><a href="#">登录</a></li>-->

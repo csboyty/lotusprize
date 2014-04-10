@@ -55,10 +55,21 @@ var index=(function(){
             if(stopFlag){
                 $("#rollImgList").stop();//停止当前动画
             }
+        },
+        setContentHeight:function(){
+            if(document.body.scrollHeight<=$("body").height()){
+                $(".content").css("minHeight",$("body").height()-290);
+            }
+
         }
     }
 })();
 $(document).ready(function(){
+    index.setContentHeight();
+
+    $(window).resize(function() {
+        index.setContentHeight();
+    });
 
     //执行一次,这样interVal就有值
     index.roll();

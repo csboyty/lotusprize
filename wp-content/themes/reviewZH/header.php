@@ -13,8 +13,20 @@
     <title><?php wp_title("|",true,"right"); ?></title>
     <link type="text/css" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/frontend/src/all.css">
     <script src="<?php echo get_template_directory_uri(); ?>/js/frontend/lib/jquery-1.7.2.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/frontend/src/googleAnalytics.js"></script>
     <!--[if lt IE 9]>
         <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <style type="text/css">
+            .article img,.article video,.article object,.article embed{
+                margin: auto;
+                display: block;
+                border: none;
+            }
+            .article video,.article object,.article embed{
+                width:592px;
+                height:333px;
+            }
+        </style>
     <![endif]-->
     <script src="<?php echo get_template_directory_uri(); ?>/js/frontend/src/index.js"></script>
 </head>

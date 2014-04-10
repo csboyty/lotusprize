@@ -3,8 +3,9 @@
 <head>
     <meta charset="utf-8">
     <title><?php wp_title("|",true,"right"); ?></title>
-    <link href="<?php echo get_template_directory_uri(); ?>/css/frontend/src/index.css" rel="stylesheet" type="text/css">
 
+    <link href="<?php echo get_template_directory_uri(); ?>/css/frontend/src/index.css" rel="stylesheet" type="text/css">
+    <script src="<?php echo get_template_directory_uri(); ?>/js/frontend/src/googleAnalytics.js"></script>
 
 </head>
 <body>

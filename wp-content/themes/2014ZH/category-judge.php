@@ -12,7 +12,6 @@ $judgeChildren=get_categories(array("parent"=>$judgeId,"hide_empty"=>false,'orde
 //get_template_part( 'column', "left" );
 get_header();
 ?>
-
     <ul class="judgeList">
         <?php
         $showDir="";

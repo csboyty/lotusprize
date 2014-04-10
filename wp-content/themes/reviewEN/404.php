@@ -8,11 +8,13 @@
 
 </head>
 <body>
+
 <div class="wpHeader">
-    <h1>
-        <a href="<?php echo home_url(); ?>">logo</a>
+    <h1 class="logo">
+       <a href="<?php echo home_url(); ?>">logo</a>
     </h1>
 </div>
+
 <div class="_404Content">
     Oops!The page is not found,back to<a href="<?php echo home_url(); ?>" class="backHome">home</a>
 </div>

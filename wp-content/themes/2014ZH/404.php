@@ -8,11 +8,16 @@
 
 </head>
 <body>
+
 <div class="wpHeader">
-    <h1>
-        <a href="<?php echo home_url(); ?>">logo</a>
+    <h1 class="logo">
+        <!--<a href="<?php /*echo home_url(); */?>">logo</a>-->
+        <object data="<?php echo get_template_directory_uri(); ?>/data/header.swf" class="object">
+            <embed class="object" src="<?php echo get_template_directory_uri(); ?>/data/header.swf"></embed>
+        </object>
     </h1>
 </div>
+
 <div class="_404Content">
     Oops!您访问的页面不存在，3秒后将自动跳转到<a href="<?php echo home_url(); ?>" class="backHome">首页</a>
 </div>
