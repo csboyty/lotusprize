@@ -11,6 +11,8 @@
     <meta charset="utf-8">
     <title><?php wp_title("|",true,"right"); ?></title>
     <link type="text/css" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/frontend/src/all.css">
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/frontend/app/favicon.png"
+          mce_href="<?php echo get_template_directory_uri(); ?>/images/frontend/app/favicon.png" type="image/x-png">
     <script src="<?php echo get_template_directory_uri(); ?>/js/frontend/lib/jquery-1.7.2.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/frontend/src/googleAnalytics.js"></script>
     <!--[if lt IE 9]>
