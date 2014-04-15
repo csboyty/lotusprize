@@ -52,7 +52,7 @@ body{
     text-align: center;
 }
 .links li a {
-    color:#1fb25a;
+    color:#66cc99;
     text-decoration: none;
     -webkit-transition:0.5s ease all;
     -moz-transition:0.5s ease all;
@@ -62,7 +62,7 @@ body{
     margin-bottom: 5px;
 }
 .links li a:hover {
-    color:#e26684;
+    color:#FF3399;
     font-size: 24px;
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);

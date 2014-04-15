@@ -92,7 +92,7 @@ ul{
 }
 .wpHeader li a:hover{
     cursor:pointer;
-    color:#e26684;
+    color:#FF3399;
 }
 
 /**
@@ -175,7 +175,7 @@ ul{
 .newsList a{
     color:#1fb25a;
     font-size: 14px;
-    width: 70%;
+    max-width: 70%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -183,7 +183,7 @@ ul{
     overflow: hidden;
 }
 .newsList a:hover{
-    color:#e26684;
+    color:#FF3399;
 }
 .newsList .date{
     font-size: 14px;
@@ -195,12 +195,21 @@ ul{
     line-height: 24px;
     margin:50px auto;
 }
+.article h2{
+    font-size: 20px;
+    font-weight: normal;
+    color: #1fb25a;
+    text-align: center;
+}
+
 .article table,.article ul{
     font-size: 14px;
 }
 .article p{
     font-size: 14px;
     line-height: 32px;
+    word-break: break-all;
+    text-indent: 28px;
 }
 .article img,.article video,.article object,.article embed{
     max-width: 100%;
@@ -244,7 +253,7 @@ ul{
     margin-bottom:20px;
 }
 .leftColumn ul li a:hover{
-    color:#e26684;
+    color:#FF3399;
 }
 .leftColumn .ruleMenu li:first-child + li{
     margin-top: 100px;
@@ -309,7 +318,7 @@ ul{
 .judgeList .infoContainer{
     position: absolute;
     top:100%;
-    background: #e26684;
+    background: #FF3399;
     color:#fff;
     width: 90%;
     height: 90%;

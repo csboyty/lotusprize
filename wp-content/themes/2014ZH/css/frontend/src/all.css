@@ -19,13 +19,13 @@ a{
     color: #b5b5b5;
 }
 a.active{
-    color:#1fb25a;
+    color:#66cc99;
 }
 .hidden{
     display: none;
 }
 h3{
-    color: #1fb25a;
+    color: #66cc99;
     font-weight: normal;
     font-size: 24px;
 }
@@ -110,11 +110,11 @@ ul{
 }
 .wpHeader li a.active{
     cursor:pointer;
-    color:#1fb25a;
+    color:#66cc99;
 }
 .wpHeader li a:hover{
     cursor:pointer;
-    color:#e26684;
+    color:#FF3399;
 }
 
 /**
@@ -155,10 +155,10 @@ ul{
     cursor: pointer;
 }
 .rollImg .rollNumberList li.active{
-    color:#1fb25a;
+    color:#66cc99;
 }
 .rollImg .rollNumberList li:hover{
-    color:#e26684;
+    color:#FF3399;
 }
 
 .content{
@@ -197,9 +197,9 @@ ul{
     font-size: 16px;
 }
 .newsList a{
-    color:#1fb25a;
+    color:#66cc99;
     font-size: 14px;
-    width: 70%;
+    max-width: 70%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -207,7 +207,7 @@ ul{
     overflow: hidden;
 }
 .newsList a:hover{
-    color:#e26684;
+    color:#FF3399;
 }
 .newsList .date{
     font-size: 14px;
@@ -219,12 +219,21 @@ ul{
     line-height: 24px;
     margin:50px auto;
 }
+.article h2{
+    font-size: 20px;
+    font-weight: normal;
+    color: #66cc99;
+    text-align: center;
+}
+
 .article table,.article ul{
     font-size: 14px;
 }
 .article p{
-     font-size: 14px;
-     line-height: 32px;
+    font-size: 14px;
+    line-height: 32px;
+    word-break: break-all;
+    text-indent: 28px;
  }
 .article img,.article video,.article object,.article embed{
     max-width: 100%;
@@ -236,7 +245,7 @@ ul{
 .return{
     cursor: pointer;
     font-size: 14px;
-    color: #1fb25a;
+    color: #66cc99;
 }
 .pagination{
     margin-top:20px;
@@ -248,7 +257,7 @@ ul{
     font-size: 14px;
 }
 .pagination .page-numbers a{
-    color:#1fb25a;
+    color:#66cc99;
 }
 
 /**
@@ -268,19 +277,19 @@ ul{
     margin-bottom:20px;
 }
 .leftColumn ul li a:hover{
-    color:#e26684;
+    color:#FF3399;
 }
 /*.leftColumn .ruleMenu li:first-child + li{
     margin-top: 100px;
 }
 .leftColumn .ruleMenu li:first-child + li a{
-    color: #1fb25a;
+    color: #66cc99;
 }*/
 .leftColumn .ruleMenu li{
     margin-top: 100px;
 }
 .leftColumn .ruleMenu li a{
-    color: #1fb25a;
+    color: #66cc99;
 }
 .rightColumn{
     margin-left: 280px;
@@ -290,17 +299,17 @@ ul{
 .rightColumn h3{
     font-size: 18px;
     font-weight: normal;
-    color: #1fb25a;
+    color: #66cc99;
 }
 .rightColumn h2{
     font-size: 26px;
     font-weight: normal;
-    color: #1fb25a;
+    color: #66cc99;
 }
 .rightColumn h4{
     font-size: 14px;
     font-weight: normal;
-    color: #1fb25a;
+    color: #66cc99;
 }
 .rightColumn p{
     line-height: 32px;
@@ -317,7 +326,7 @@ ul{
     margin:50px auto;
 }
 .judgeList .title{
-    color:#1fb25a;
+    color:#66cc99;
     margin-bottom: 20px;
     margin-top:50px ;
     font-size: 18px;
@@ -343,7 +352,7 @@ ul{
 .judgeList .infoContainer{
     position: absolute;
     top:100%;
-    background: #e26684;
+    background: #FF3399;
     color:#fff;
     width: 90%;
     height: 90%;
@@ -383,7 +392,7 @@ ul{
 *页脚
 */
 .footer{
-    color:#1fb25a;
+    color:#66cc99;
     background: #F6F5F4;
     padding:20px;
 }
@@ -401,7 +410,7 @@ ul{
     text-align: center;
 }
 ._404Content a{
-    color:#1fb25a ;
+    color:#66cc99 ;
 }
 
 /**
