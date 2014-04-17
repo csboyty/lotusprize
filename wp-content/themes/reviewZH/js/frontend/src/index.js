@@ -72,19 +72,19 @@ $(document).ready(function(){
     });
 
     //执行一次,这样interVal就有值
-    index.roll();
+    //index.roll();
 
     //点击事件
-    $("#rollNumberList li").click(function(){
+    /*$("#rollNumberList li").click(function(){
         index.numberClickHandler($(this));
-    });
+    });*/
 
     //鼠标浮动停止滚动
-    $("#rollImgList li").hover(function(){
+    /*$("#rollImgList li").hover(function(){
         index.stopRoll(false);
     },function(){
         index.roll();
-    });
+    });*/
 
     //点击新闻
     $("#newsList a").click(function(){

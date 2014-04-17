@@ -32,15 +32,17 @@ get_header();
                 ?>
 
                 <li>
-                    <div class="thumb">
-                        <img src="<?php echo $showDir; ?>">
-                    </div>
-                    <div class="infoContainer">
-                        <div class="info">
-                            <h4><?php echo $post->post_title; ?></h4>
-                            <p><?php echo $post->post_cotent; ?></p>
+                    <a class="judgeItem" href="<?php echo get_permalink($post->ID); ?>">
+                        <div class="thumb">
+                            <img src="<?php echo $showDir; ?>">
                         </div>
-                    </div>
+                        <div class="infoContainer">
+                            <div class="info">
+                                <h4><?php echo $post->post_title; ?></h4>
+                                <p><?php echo $post->post_cotent; ?></p>
+                            </div>
+                        </div>
+                    </a>
                 </li>
 
             <?php  };  ?>

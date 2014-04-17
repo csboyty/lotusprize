@@ -29,7 +29,7 @@ $newsId=5;
             </li>
         </ul>
         <ul id="rollNumberList" class="rollNumberList">
-            <li class="active" num="1">
+            <li  num="1">
                 <span>Design Discovery</span>
                 <p>3.10-4.30</p>
             </li>

@@ -9,7 +9,13 @@ var index=(function(){
     var currentNumber=2;//目前的滚动数字，首次进入的滚动应该是2
     var liCount=5;//总共的图片数量,灵活一点的话是在页面初始化后获取
     var interVal=null;//记录setInterval的返回值
-
+    var status={
+        1:"2014/04/30",
+        2:"2014/06/30",
+        3:"2014/08/01",
+        4:"2014/08/15",
+        5:"2014/10/10"
+    };
     return {
         roll:function(){
             interVal=setInterval(function(){
@@ -40,10 +46,11 @@ var index=(function(){
                 "left":-(currentNumber-1)*100+"%"
             },2000);
 
+
             el.addClass("active");
 
             //重新绑定interVal
-            this.roll();
+            //this.roll();
         },
         stopRoll:function(stopFlag){
             if(interVal){
@@ -61,18 +68,29 @@ var index=(function(){
                 $(".content").css("minHeight",$("body").height()-290);
             }
 
+        },
+        initStatus:function(){
+            for(var i in status){
+                if(new Date().getTime()<new Date(status[i]).getTime()){
+                    $("#rollNumberList li[num='"+i+"'] ").addClass("active");
+                    $("#rollImgList").css("left",-(i-1)*100+"%");
+                    break;
+                }
+            }
         }
     }
 })();
 $(document).ready(function(){
     index.setContentHeight();
 
+    index.initStatus();
+
     $(window).resize(function() {
         index.setContentHeight();
     });
 
     //执行一次,这样interVal就有值
-    index.roll();
+    //index.roll();
 
     //点击事件
     $("#rollNumberList li").click(function(){
@@ -80,11 +98,11 @@ $(document).ready(function(){
     });
 
     //鼠标浮动停止滚动
-    $("#rollImgList li").hover(function(){
+    /*$("#rollImgList li").hover(function(){
         index.stopRoll(false);
     },function(){
         index.roll();
-    });
+    });*/
 
     //点击新闻
     $("#newsList a").click(function(){
@@ -113,5 +131,22 @@ $(document).ready(function(){
             $("#article").html("");
             $("#newsContainer").css("overflow","hidden").width("117.5%");
         });
+    });
+
+    $(".judgeItem").click(function(){
+        var href=$(this).attr("href");
+
+        $("#blackout").show();
+        $("#popContent").load(href,function(){
+            $("#popWindow").removeClass("hidden");
+        });
+
+        return false;
+    });
+
+    $("#closePopWindow").click(function(){
+        $("#popWindow").addClass("hidden");
+        $("#blackout").hide();
+        return false;
     });
 });

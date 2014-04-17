@@ -13,11 +13,9 @@ $newsId=5;
     <div class="rollImg">
         <ul id="rollImgList" class="rollImgList">
             <li>
-                <a href="#">注册</a>
                 <img src="<?php echo get_template_directory_uri(); ?>/images/frontend/app/status1.jpg">
             </li>
             <li>
-                <a href="#">注册</a>
                 <img src="<?php echo get_template_directory_uri(); ?>/images/frontend/app/status2.jpg">
             </li>
             <li>
@@ -31,7 +29,7 @@ $newsId=5;
             </li>
         </ul>
         <ul id="rollNumberList" class="rollNumberList">
-            <li class="active" num="1">
+            <li num="1">
                 <span>设计发现</span>
                 <p>3.10-4.30</p>
             </li>

@@ -17,7 +17,7 @@
 
     <div class="content indexContent">
         <h1 class="logo">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/frontend/app/logo.png">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/frontend/app/index.gif">
         </h1>
         <ul class="links">
             <li>

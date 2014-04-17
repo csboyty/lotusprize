@@ -34,7 +34,7 @@
 <body>
 <div class="wpHeader">
     <h1 class="logo">
-        <a href="http://lotusprize.com/2014en/">
+        <a href="<?php echo home_url(); ?>">
             <img src="<?php echo get_template_directory_uri(); ?>/images/frontend/app/rotate.gif">
         </a>
     </h1>

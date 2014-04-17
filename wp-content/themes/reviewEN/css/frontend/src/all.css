@@ -18,10 +18,10 @@ a{
     color: #b5b5b5;
 }
 a.active{
-    color:#1fb25a;
+    color:#33cc99;
 }
 h3{
-    color: #1fb25a;
+    color: #33cc99;
     font-weight: normal;
     font-size: 24px;
 }
@@ -67,7 +67,7 @@ ul{
     text-align: center;
 }
 .wpHeader .rightMenu li a{
-    color:#FDA3AF;
+    color:#FF3399;
 }
 .wpHeader .mainMenu{
     width:50%;
@@ -87,7 +87,7 @@ ul{
 }
 .wpHeader li a.active{
     cursor:pointer;
-    color:#1fb25a;
+    color:#33cc99;
 }
 .wpHeader li a:hover{
     cursor:pointer;
@@ -137,7 +137,7 @@ ul{
     cursor: pointer;
 }
 .rollImg .rollNumberList li.active{
-    color:#1fb25a;
+    color:#33cc99;
 }
 */
 
@@ -175,7 +175,7 @@ ul{
     font-size: 16px;
 }
 .newsList a{
-    color:#1fb25a;
+    color:#33cc99;
     font-size: 14px;
     max-width: 70%;
     overflow: hidden;
@@ -200,7 +200,7 @@ ul{
 .article h2{
     font-size: 20px;
     font-weight: normal;
-    color: #1fb25a;
+    color: #33cc99;
     text-align: center;
 }
 
@@ -210,7 +210,6 @@ ul{
 .article p{
     font-size: 14px;
     line-height: 32px;
-    word-break: break-all;
 }
 .article img,.article video,.article object,.article embed{
     max-width: 100%;
@@ -223,7 +222,7 @@ ul{
 .return{
     cursor: pointer;
     font-size: 14px;
-    color: #1fb25a;
+    color: #33cc99;
 }
 .pagination{
     margin-top:20px;
@@ -235,7 +234,7 @@ ul{
     font-size: 14px;
 }
 .pagination .page-numbers a{
-    color:#1fb25a;
+    color:#33cc99;
 }
 
 /**
@@ -261,7 +260,7 @@ ul{
     margin-top: 100px;
 }
 .leftColumn .ruleMenu li:first-child + li a{
-    color: #1fb25a;
+    color: #33cc99;
 }
 .rightColumn{
     margin-left: 280px;
@@ -271,17 +270,17 @@ ul{
 .rightColumn h3{
     font-size: 18px;
     font-weight: normal;
-    color: #1fb25a;
+    color: #33cc99;
 }
 .rightColumn h2{
     font-size: 26px;
     font-weight: normal;
-    color: #1fb25a;
+    color: #33cc99;
 }
 .rightColumn h4{
     font-size: 14px;
     font-weight: normal;
-    color: #1fb25a;
+    color: #33cc99;
 }
 .rightColumn p{
     line-height: 32px;
@@ -295,7 +294,7 @@ ul{
     font-size: 0px;
 }
 .judgeList .title{
-    color:#1fb25a;
+    color:#33cc99;
     margin-bottom: 20px;
     margin-top:50px ;
 }
@@ -311,11 +310,13 @@ ul{
     vertical-align: top;
     margin:5px;
 }
+
 .judgeList .thumb{
     font-size: 0px;
 }
 .judgeList .thumb img{
     width: 100%;
+    border: none;
 }
 .judgeList .infoContainer{
     position: absolute;
@@ -325,6 +326,7 @@ ul{
     width: 90%;
     height: 90%;
     padding: 5%;
+    border-radius: 5px;
     opacity: .8;
     filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
     -webkit-transition: all .4s ease-out;
@@ -344,7 +346,6 @@ ul{
 }
 .judgeList .info p{
     white-space: normal;
-    word-break: break-all;
     font-size: 12px;
     color:#fff;
     line-height: 18px;
@@ -374,7 +375,7 @@ ul{
 *页脚
 */
 .footer{
-    color:#1fb25a;
+    color:#33cc99;
     background: #F6F5F4;
     padding:20px;
 }
@@ -392,7 +393,7 @@ ul{
     text-align: center;
 }
 ._404Content a{
-    color:#1fb25a ;
+    color:#33cc99 ;
 }
 
 /**
@@ -423,6 +424,12 @@ ul{
     .judgeList .infoContainer{
         width: 100%;
         height: 100%;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+    .judgeList .thumb img{
+        border-radius: 5px;
     }
 }
 

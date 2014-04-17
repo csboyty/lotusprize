@@ -19,13 +19,16 @@ a{
     color: #b5b5b5;
 }
 a.active{
-    color:#66cc99;
+    color:#33cc99;
+}
+a:hover{
+    color:#FF3399;
 }
 .hidden{
     display: none;
 }
 h3{
-    color: #66cc99;
+    color: #33cc99;
     font-weight: normal;
     font-size: 24px;
 }
@@ -89,7 +92,7 @@ ul{
     text-align: center;
 }
 .wpHeader .rightMenu li a{
-    color:#FDA3AF;
+    color:#FF3399;
 }
 .wpHeader .mainMenu{
     width:50%;
@@ -110,7 +113,7 @@ ul{
 }
 .wpHeader li a.active{
     cursor:pointer;
-    color:#66cc99;
+    color:#33cc99;
 }
 .wpHeader li a:hover{
     cursor:pointer;
@@ -155,7 +158,7 @@ ul{
     cursor: pointer;
 }
 .rollImg .rollNumberList li.active{
-    color:#66cc99;
+    color:#33cc99;
 }
 .rollImg .rollNumberList li:hover{
     color:#FF3399;
@@ -197,7 +200,7 @@ ul{
     font-size: 16px;
 }
 .newsList a{
-    color:#66cc99;
+    color:#33cc99;
     font-size: 14px;
     max-width: 70%;
     overflow: hidden;
@@ -222,7 +225,7 @@ ul{
 .article h2{
     font-size: 20px;
     font-weight: normal;
-    color: #66cc99;
+    color: #33cc99;
     text-align: center;
 }
 
@@ -232,7 +235,6 @@ ul{
 .article p{
     font-size: 14px;
     line-height: 32px;
-    word-break: break-all;
     text-indent: 28px;
  }
 .article img,.article video,.article object,.article embed{
@@ -245,7 +247,7 @@ ul{
 .return{
     cursor: pointer;
     font-size: 14px;
-    color: #66cc99;
+    color: #33cc99;
 }
 .pagination{
     margin-top:20px;
@@ -257,7 +259,7 @@ ul{
     font-size: 14px;
 }
 .pagination .page-numbers a{
-    color:#66cc99;
+    color:#33cc99;
 }
 
 /**
@@ -283,13 +285,13 @@ ul{
     margin-top: 100px;
 }
 .leftColumn .ruleMenu li:first-child + li a{
-    color: #66cc99;
+    color: #33cc99;
 }*/
 .leftColumn .ruleMenu li{
     margin-top: 100px;
 }
 .leftColumn .ruleMenu li a{
-    color: #66cc99;
+    color: #33cc99;
 }
 .rightColumn{
     margin-left: 280px;
@@ -299,17 +301,17 @@ ul{
 .rightColumn h3{
     font-size: 18px;
     font-weight: normal;
-    color: #66cc99;
+    color: #33cc99;
 }
 .rightColumn h2{
     font-size: 26px;
     font-weight: normal;
-    color: #66cc99;
+    color: #33cc99;
 }
 .rightColumn h4{
     font-size: 14px;
     font-weight: normal;
-    color: #66cc99;
+    color: #33cc99;
 }
 .rightColumn p{
     line-height: 32px;
@@ -326,9 +328,10 @@ ul{
     margin:50px auto;
 }
 .judgeList .title{
-    color:#66cc99;
+    color:#33cc99;
     margin-bottom: 20px;
     margin-top:50px ;
+    margin-left: 0.83%;
     font-size: 18px;
 }
 .judgeList .title:first-child{
@@ -346,8 +349,10 @@ ul{
 .judgeList .thumb{
     font-size: 0px;
 }
+
 .judgeList .thumb img{
     width: 100%;
+    border: none;
 }
 .judgeList .infoContainer{
     position: absolute;
@@ -358,6 +363,7 @@ ul{
     height: 90%;
     padding: 5%;
     opacity: .8;
+    border-radius: 5px;
     filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
     -webkit-transition: all .4s ease-out;
     -moz-transition: all .4s ease-out;
@@ -376,7 +382,6 @@ ul{
 }
 .judgeList .info p{
     white-space: normal;
-    word-break: break-all;
     font-size: 12px;
     line-height: 18px;
     max-height:54px;
@@ -386,13 +391,60 @@ ul{
 .judgeList li:hover .infoContainer{
     top:0px;
 }
+/**
+* 弹出层
+*/
+.popWindow{
+    position: fixed;
+    top:60px;
+    width: 70%;
+    border-radius: 5px;
+    left:15%;
+    z-index: 9999;
+    background: #fff;
+}
+.popWindow .toolbar{
+    padding:20px 20px 20px 40px;
+    position: relative;
+    text-align: right;
+}
+.popContent{
+    padding:0px 5%;
+    height: 350px;
+    overflow: auto;
+    margin:10px 0px 40px 0px;
+}
+.popContent .left{
+    width: 20%;
+    position: absolute;
+}
+.popContent .left .thumb{
+    width:100%;
+    border-radius: 5px;
+}
+.popContent .right{
+    margin-left: 28%;
+}
+.popContent .right .title{
+    margin:0px;
+    font-size: 20px;
+    font-weight: normal;
+}
+.popContent p{
+    line-height: 32px;
+    text-indent: 28px;
+}
+.popContent .right .excerpt{
+    color: #33cc99;
+    text-indent: 0px;
+}
 
 
 /**
 *页脚
 */
 .footer{
-    color:#66cc99;
+    color:#33cc99;
     background: #F6F5F4;
     padding:20px;
 }
@@ -410,16 +462,17 @@ ul{
     text-align: center;
 }
 ._404Content a{
-    color:#66cc99 ;
+    color:#33cc99 ;
 }
+
 
 /**
 *遮盖层
 */
 .blackout{
     position: fixed;
-    display: none;
     height: 100%;
+    display: none;
     width: 100%;
     font-size: 14px;
     line-height: 100%;
@@ -455,8 +508,21 @@ ul{
     .judgeList .infoContainer{
         width: 100%;
         height: 100%;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+    .judgeList .thumb img{
+        border-radius:5px;
     }
 }
+
+@-moz-document url-prefix() {
+    .judgeList li{
+        width:14.8%;
+    }
+}
+
 
 
 

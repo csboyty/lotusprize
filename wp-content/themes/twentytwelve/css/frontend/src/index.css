@@ -8,6 +8,7 @@ body{
     overflow: hidden;
     font-family:"微软雅黑", "黑体", Arial, "Times New Roman", Verdana;
     height: 100%;
+    background: #fff;
 }
 .bgImgContainer{
     height: 100%;
@@ -52,7 +53,7 @@ body{
     text-align: center;
 }
 .links li a {
-    color:#66cc99;
+    color:#33cc99;
     text-decoration: none;
     -webkit-transition:0.5s ease all;
     -moz-transition:0.5s ease all;
@@ -64,10 +65,10 @@ body{
 .links li a:hover {
     color:#FF3399;
     font-size: 24px;
-    -webkit-transform: rotate(360deg);
+    /*-webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
+    transform: rotate(360deg);*/
 }
 .backHome{
     display: inline-block;
