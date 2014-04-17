@@ -414,9 +414,15 @@ ul{
 }
 .blackout .text{
     color: #fff;
+    display: block;
     position: absolute;
+    background: url(../../../images/frontend/app/loading.gif) center center no-repeat;
     left:50%;
     top:50%;
+    width: 48px;
+    height: 49px;
+    margin:-24px 0px 0px -24.5px;
+    font-size: 0px;
 }
 
 
