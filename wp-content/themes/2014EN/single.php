@@ -20,15 +20,19 @@ if($currentCat[0]->cat_ID==$ruleId){
             <img class="thumb" src="<?php echo $showDir; ?>">
         </div>
         <div class="right">
-            <h2 class="title"><?php the_title(); ?></h2>
-            <p class="excerpt"><?php echo get_the_excerpt(); ?></p>
-            <?php
-            if(get_the_content()){
-                the_content();
-            }else{
-                echo "No detail";
-            }
-            ?>
+            <div>
+                <h2 class="title"><?php the_title(); ?></h2>
+                <p class="excerpt"><?php echo get_the_excerpt(); ?></p>
+            </div>
+            <div class="contentDetail">
+                <?php
+                if(get_the_content()){
+                    the_content();
+                }else{
+                    echo "No detail";
+                }
+                ?>
+            </div>
         </div>
 
     <?php

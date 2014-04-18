@@ -402,6 +402,7 @@ ul{
     left:15%;
     z-index: 9999;
     background: #fff;
+    box-shadow:0px 0px 8px #878787;
 }
 .popWindow .toolbar{
     padding:20px 20px 20px 40px;
@@ -409,14 +410,12 @@ ul{
     text-align: right;
 }
 .popContent{
-    padding:0px 5%;
-    height: 350px;
-    overflow: auto;
     margin:10px 0px 40px 0px;
 }
 .popContent .left{
     width: 20%;
     position: absolute;
+    margin-left: 5%;
 }
 .popContent .left .thumb{
     width:100%;
@@ -424,11 +423,17 @@ ul{
 }
 .popContent .right{
     margin-left: 28%;
+    padding-right: 5px;
 }
 .popContent .right .title{
     margin:0px;
     font-size: 20px;
     font-weight: normal;
+}
+.popContent .right .contentDetail{
+    height: 200px;
+    overflow: auto;
+    padding: 5px 5% 5px 0px;
 }
 .popContent p{
     line-height: 32px;
