@@ -43,7 +43,7 @@ get_header();
                 if(is_category($judgeId)){
                     echo '<li><a href="' . $menu_item->url . '" class="active">' . $menu_item->title . '</a></li>';
                 }else{
-                    if($key==1){
+                    if($key==0){
                         echo '<li><a target="_black" href="' . $menu_item->url . '">' . $menu_item->title . '</a></li>';
                     }else{
                         echo '<li><a href="' . $menu_item->url . '">' . $menu_item->title . '</a></li>';
