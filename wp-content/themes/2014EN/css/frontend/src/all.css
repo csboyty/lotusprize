@@ -81,17 +81,19 @@ ul{
     background: url(../../../images/frontend/app/logo.png) no-repeat;
 }*/
 .wpHeader .rightMenu{
-    width: 10%;
+    width: auto;
     position: absolute;
     right: 40px;
     top:50px;
 }
-.wpHeader .rightMenu li{
+/*.wpHeader .rightMenu li{
     width: 80%;
     text-align: center;
-}
+}*/
 .wpHeader .rightMenu li a{
     color:#FF3399;
+    display: inline-block;
+    margin-right: 10px;
 }
 .wpHeader .mainMenu{
     width:50%;
@@ -388,10 +390,12 @@ ul{
 */
 .popWindow{
     position: fixed;
-    top:60px;
-    width: 70%;
+    top:50%;
+    margin-top: -250px;
+    height: 500px;
+    width: 60%;
     border-radius: 5px;
-    left:15%;
+    left:20%;
     z-index: 9999;
     background: #fff;
     box-shadow:0px 0px 8px #878787;
@@ -424,7 +428,7 @@ ul{
     font-weight: normal;
 }
 .popContent .right .contentDetail{
-    height: 200px;
+    height: 260px;
     overflow: auto;
     padding: 5px 5% 5px 0px;
 }
@@ -434,6 +438,7 @@ ul{
 .popContent .right .excerpt{
     color: #33cc99;
     text-indent: 0px;
+    padding-right:5%;
 }
 
 /**

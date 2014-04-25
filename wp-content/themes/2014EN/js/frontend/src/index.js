@@ -68,6 +68,33 @@ var index=(function(){
             }
 
         },
+        windowScroll:function(){
+            var lis=$("#newsList .hidden");
+            if(lis.length!=0){
+                if(lis.length>10){
+                    $("#newsList .hidden").slice(0,10).removeClass("hidden");
+                }else{
+                    $("#newsList .hidden").slice(0,lis.length).removeClass("hidden");
+                }
+            }
+        },
+        checkLogin:function(){
+            $.getJSON("http://192.168.2.167:9911/lotusprize/s/authenticateStatus?callback=?",function(data){
+                var rightMenu= $("#rightMenu");
+                if(data.authenticated){
+                    rightMenu.find(".itemLogin").remove();
+                    rightMenu.find("li").removeClass("hidden");
+
+                    rightMenu.find(".itemHome a").attr("href",function(index,href){
+                        return href.replace("{roleName}",data.roleName);
+                    })
+
+                }else{
+                    rightMenu.find(".itemLogin").removeClass('hidden');
+                    rightMenu.find("li").not(".itemLogin").remove();
+                }
+            });
+        },
         initStatus:function(){
             for(var i in status){
                 if(new Date().getTime()<new Date(status[i]).getTime()){
@@ -76,6 +103,8 @@ var index=(function(){
                     break;
                 }
             }
+
+            //this.checkLogin();
         }
     }
 })();
@@ -86,6 +115,15 @@ $(document).ready(function(){
 
     $(window).resize(function() {
         index.setContentHeight();
+    });
+
+    index.windowScroll();
+
+    //滚动事件
+    $(window).scroll(function(){
+        if($(document).height()-$(window).height()<=$(window).scrollTop()){
+            index.windowScroll();
+        }
     });
 
     //执行一次,这样interVal就有值

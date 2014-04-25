@@ -35,7 +35,7 @@ $newsId=5;
             </li>
             <li num="2">
                 <span>Call for Entries</span>
-                <p>5.1-6.30</p>
+                <p>5.10-6.30</p>
             </li>
             <li num="3">
                 <span>Preliminary Assessment</span>
@@ -59,7 +59,7 @@ $newsId=5;
                     <ul id="newsList" class="newsList">
                         <?php while (have_posts()) : the_post();?>
 
-                            <li>
+                            <li class="hidden">
                                 <a title="<?php the_title(); ?>" href="<?php the_permalink(); ?>">
                                     <?php echo get_the_date("Y-m-d"); ?>
                                     &nbsp;&nbsp;&nbsp;
