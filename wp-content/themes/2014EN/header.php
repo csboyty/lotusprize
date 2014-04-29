@@ -40,7 +40,7 @@
         </a>
     </h1>
     <ul class="rightMenu" id="rightMenu">
-        <li class="itemHome hidden"><a  href="/lp/s/{roleName}/home?_lang=en">My Home</a></li>
+        <li class="itemHome hidden"><a  href="/lp/s/{roleName}?_lang=en">My Lotusprize</a></li>
         <li class="itemLogout hidden"><a  href="/lp/s/logout">Logout</a></li>
         <li class="itemLogin hidden"><a  href="/lp/s/login?_lang=en">Login</a></li>
     </ul>

@@ -41,7 +41,7 @@
         </a>
     </h1>
     <ul class="rightMenu" id="rightMenu">
-        <li class="itemHome hidden"><a  href="/lp/s/{roleName}/home">我的主页</a></li>
+        <li class="itemHome hidden"><a  href="/lp/s/{roleName}">我的芙蓉杯</a></li>
         <li class="itemLogout hidden"><a  href="/lp/s/logout">退出</a></li>
         <li class="itemLogin hidden"><a  href="/lp/s/login">登录</a></li>
     </ul>
