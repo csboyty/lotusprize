@@ -40,14 +40,14 @@
             <img src="<?php echo get_template_directory_uri(); ?>/images/frontend/app/rotate.gif">
         </a>
     </h1>
-    <ul class="rightMenu" id="rightMenu">
+    <ul class="optMenu headerMenu" id="optMenu">
         <li class="itemHome hidden"><a  href="/lp/s/{roleName}">我的芙蓉杯</a></li>
         <li class="itemLogout hidden"><a  href="/lp/s/logout">退出</a></li>
         <li class="itemLogin hidden"><a  href="/lp/s/login">登录</a></li>
     </ul>
     <div class="wpMenu">
 
-        <ul class="mainMenu" id="menu">
+        <ul class="mainMenu headerMenu" id="menu">
             <?php
             $main_items = wp_get_nav_menu_items($mainMenuId);
             //获取文章/分类展示页的category，is_category可以判断在当前分类页是否属于某一分类
@@ -75,7 +75,7 @@
             }
             ?>
         </ul>
-        <ul class="langMenu" id="langMenu">
+        <ul class="langMenu headerMenu" id="langMenu">
             <li><a href="<?php echo home_url(); ?>" class="active">中文</a></li>
             <li><a href="<?php echo home_url()."en"; ?>" >English</a></li>
         </ul>

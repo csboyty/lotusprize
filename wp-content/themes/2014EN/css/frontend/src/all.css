@@ -24,7 +24,7 @@ a.active{
     color:#33cc99;
 }
 .hidden{
-    display: none;
+    display: none !important;
 }
 h3{
     color: #33cc99;
@@ -64,61 +64,46 @@ ul{
     position: relative;
     padding-top: 25px;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
-.wpHeader ul,.wpHeader li{
+.headerMenu{
     display: inline-block;
 }
-/*.wpHeader h1{
-    width: 267px;
-    height: 52px;
-    margin: 0px auto 20px auto;
-}
-.wpHeader h1 a{
-    font-size: 0px;
-    width: 100%;
-    height: 100%;
-    display: block;
-    background: url(../../../images/frontend/app/logo.png) no-repeat;
-}*/
-.wpHeader .rightMenu{
-    width: auto;
-    position: absolute;
-    right: 50px;
-    top:50px;
-}
-/*.wpHeader .rightMenu li{
-    width: 80%;
-    text-align: center;
-}*/
-.wpHeader .rightMenu li a{
-    color:#FF3399;
+.headerMenu li{
+    font-size: 14px;
     display: inline-block;
-    margin-right: 10px;
 }
-.wpHeader .mainMenu{
-    width:50%;
-    margin-left: 10%;
-    font-size:0px;
-}
-.wpHeader .mainMenu li{
-    margin-right: 10%;
-    font-size: 14px;
-}
-.wpHeader .langMenu{
-    width: 20%;
-    margin-left: 15%;
-}
-.wpHeader .langMenu li{
-    width: 30%;
-    font-size: 14px;
-}
-.wpHeader li a.active{
+.headerMenu li a.active{
     cursor:pointer;
     color:#33cc99;
 }
-.wpHeader li a:hover{
+.headerMenu li a:hover{
     cursor:pointer;
     color:#FF3399;
+}
+.optMenu{
+    position: absolute;
+    width: auto;
+    right: 50px;
+    bottom:50px;
+}
+.optMenu li{
+    margin-right: 10px;
+}
+.mainMenu{
+    width:50%;
+    margin-left: 10%;
+}
+.mainMenu li{
+    margin-right: 10%;
+}
+.langMenu{
+    width: 20%;
+    margin-left: 15%;
+}
+.langMenu li{
+    width: 30%;
 }
 
 /**

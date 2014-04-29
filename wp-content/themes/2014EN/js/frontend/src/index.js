@@ -80,7 +80,7 @@ var index=(function(){
         },
         checkLogin:function(){
             $.getJSON("http://192.168.2.167:9911/lotusprize/s/authenticateStatus?callback=?",function(data){
-                var rightMenu= $("#rightMenu");
+                var rightMenu= $("#optMenu");
                 if(data.authenticated){
                     rightMenu.find(".itemLogin").remove();
                     rightMenu.find("li").removeClass("hidden");
