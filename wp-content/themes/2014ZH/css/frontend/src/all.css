@@ -505,7 +505,7 @@ ul{
 }
 
 /**
-*Safari hack
+*Safari and Chrome hack
 */
 @media screen and (-webkit-min-device-pixel-ratio:0){
     .judgeList .infoContainer{
@@ -520,6 +520,9 @@ ul{
     }
 }
 
+/**
+*Firefox hack
+*/
 @-moz-document url-prefix() {
     .judgeList li{
         width:14.8%;

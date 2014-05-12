@@ -80,7 +80,7 @@ var index=(function(){
             }
         },
         checkLogin:function(){
-            $.getJSON("http://192.168.2.167:9911/lotusprize/s/authenticateStatus?callback=?",function(data){
+            $.getJSON("http://www.lotusprize.com/lp/s/authenticateStatus?callback=?",function(data){
                 var rightMenu= $("#optMenu");
                 if(data.authenticated){
                     rightMenu.find(".itemLogin").remove();
@@ -105,7 +105,7 @@ var index=(function(){
                 }
             }
 
-            //this.checkLogin();
+            this.checkLogin();
         }
     }
 })();
