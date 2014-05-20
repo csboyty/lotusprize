@@ -39,10 +39,15 @@
             <img src="<?php echo get_template_directory_uri(); ?>/images/frontend/app/rotate.gif">
         </a>
     </h1>
-    <ul class="optMenu headerMenu" id="optMenu">
-        <li class="itemHome hidden"><a  href="/lp/s/{roleName}?_lang=en">My Lotusprize</a></li>
-        <li class="itemLogout hidden"><a  href="/lp/s/logout">Logout</a></li>
-        <li class="itemLogin hidden"><a  href="/lp/s/login?_lang=en">Login</a></li>
+    <ul class="links headerMenu">
+        <li class="linkItem icsidItem">
+            <a  href="http://www.icsid.org">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/frontend/app/iconIcsid.png">
+            </a>
+        </li>
+        <li class="linkItem cumulItem"><a  href="http://www.cumulusassociation.org/component/content/1921-call-for-entries-the-4th-lotusprize-international-design-competition/152">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/frontend/app/iconCumulus.png">
+            </a></li>
     </ul>
     <div class="wpMenu">
 
@@ -84,9 +89,14 @@
             }
             ?>
         </ul>
-        <ul class="langMenu headerMenu" id="langMenu">
+        <ul class="wpLangMenu headerMenu" id="langMenu">
             <li><a href="<?php echo substr(home_url(),0,-2); ?>" >中文</a></li>
             <li><a href="<?php echo home_url(); ?>" class="active">English</a></li>
+        </ul>
+        <ul class="wpOptMenu headerMenu" id="optMenu">
+            <li class="itemHome hidden"><a  href="/lp/s/{roleName}?_lang=en">My Lotusprize</a></li>
+            <li class="itemLogout hidden"><a  href="/lp/s/logout">Logout</a></li>
+            <li class="itemLogin hidden"><a  href="/lp/s/login?_lang=en">Login</a></li>
         </ul>
     </div>
 </div>

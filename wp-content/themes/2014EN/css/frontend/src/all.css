@@ -91,6 +91,31 @@ ul{
 .optMenu li{
     margin-right: 10px;
 }
+.links{
+    position: absolute;
+    width: auto;
+    right: 20px;
+    bottom:50px;
+}
+.links .linkItem{
+    margin-left: 10px;
+}
+.links .linkItem a{
+    width:auto;
+    height: 30px;
+    font-size: 0px;
+}
+.links .linkItem a img{
+    border: none;
+}
+.wpOptMenu{
+    width: auto;
+    float: right;
+    margin-right: 20px;
+}
+.wpOptMenu li{
+    margin-left: 20px;
+}
 .mainMenu{
     width:50%;
     margin-left: 10%;
@@ -103,6 +128,13 @@ ul{
     margin-left: 15%;
 }
 .langMenu li{
+    width: 30%;
+}
+.wpLangMenu{
+    width: 13%;
+    margin-left: 5%;
+}
+.wpLangMenu li{
     width: 30%;
 }
 
