@@ -50,11 +50,18 @@
         <ul class="mainMenu headerMenu" id="menu">
             <?php
             $main_items = wp_get_nav_menu_items($mainMenuId);
+
             //获取文章/分类展示页的category，is_category可以判断在当前分类页是否属于某一分类
             $currentCat=get_the_category();
+            $isHome=false;
+            //print_r($currentCat);
+
+            //print_r(is_home()?"111":"222");
+
             $currentCatId=0;
             if(is_home()||is_category($newsId)){
-                $currentCatId=$newsId;
+                //$currentCatId=$newsId;
+                $isHome=true;
             }else if(is_category($ruleId)||$currentCat[0]->cat_ID==$ruleId){
                 $currentCatId=$ruleId;
             }else if(is_category($worksId)||$currentCat[0]->cat_ID==$worksId){
@@ -66,12 +73,19 @@
             //print_r($currentCatId);
             //print_r($main_items);
             foreach ($main_items as $key => $menu_item ) {
-                if($menu_item->object_id==$currentCatId){
-                    echo '<li><a href="' . $menu_item->url . '" class="active">' . $menu_item->title . '</a></li>';
+                if($isHome){
+                    if($key==0){
+                        echo '<li><a href="' . $menu_item->url . '" class="active">' . $menu_item->title . '</a></li>';
+                    }else{
+                        echo '<li><a href="' . $menu_item->url . '">' . $menu_item->title . '</a></li>';
+                    }
                 }else{
-                    echo '<li><a href="' . $menu_item->url . '">' . $menu_item->title . '</a></li>';
+                    if($menu_item->object_id==$currentCatId){
+                        echo '<li><a href="' . $menu_item->url . '" class="active">' . $menu_item->title . '</a></li>';
+                    }else{
+                        echo '<li><a href="' . $menu_item->url . '">' . $menu_item->title . '</a></li>';
+                    }
                 }
-
             }
             ?>
         </ul>
