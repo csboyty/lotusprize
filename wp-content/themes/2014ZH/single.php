@@ -41,6 +41,8 @@ if($currentCat[0]->cat_ID==$ruleId){
     endwhile;
 }else{
     //需要获取主循环的内容
+    get_header();
+
     while(have_posts()):the_post();
         ?>
 

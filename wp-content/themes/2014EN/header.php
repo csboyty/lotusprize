@@ -41,11 +41,11 @@
     </h1>
     <ul class="links headerMenu">
         <li class="linkItem icsidItem">
-            <a  href="http://www.icsid.org">
+            <a target="_blank" href="http://www.icsid.org/events/events/calendar1307.htm">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/frontend/app/iconIcsid.png">
             </a>
         </li>
-        <li class="linkItem cumulItem"><a  href="http://www.cumulusassociation.org/component/content/1921-call-for-entries-the-4th-lotusprize-international-design-competition/152">
+        <li class="linkItem cumulItem"><a target="_blank" href="http://www.cumulusassociation.org/component/content/1921-call-for-entries-the-4th-lotusprize-international-design-competition/152">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/frontend/app/iconCumulus.png">
             </a></li>
     </ul>

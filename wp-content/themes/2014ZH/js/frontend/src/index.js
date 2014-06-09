@@ -143,7 +143,7 @@ $(document).ready(function(){
     });*/
 
     //点击新闻
-    $("#newsList a").click(function(){
+    /*$("#newsList a").click(function(){
         var url=$(this).attr("href");
         $("#blackout").show();
         $("#article").load(url,function(){
@@ -159,7 +159,7 @@ $(document).ready(function(){
         });
 
         return false;
-    });
+    });*/
     $(".return").click(function(){
         $("#newsPanel").animate({
             "left":"0%",
