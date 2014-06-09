@@ -45,12 +45,24 @@ if($currentCat[0]->cat_ID==$ruleId){
 
     while(have_posts()):the_post();
         ?>
+        <div class="content">
+            <div class="article" id="article">
+                <h2><?php the_title(); ?></h2>
 
-        <h2><?php the_title(); ?></h2>
-
+                <?php
+                the_content();
+                ?>
+            </div>
+        </div>
         <?php
-        the_content();
     endwhile;
+
+    get_footer(); ?>
+
+    </body>
+    </html>
+
+    <?php
 }
 
 ?>

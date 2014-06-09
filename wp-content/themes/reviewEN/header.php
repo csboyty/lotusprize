@@ -10,6 +10,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title><?php wp_title("|",true,"right"); ?></title>
     <link type="text/css" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/frontend/src/all.css">
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/frontend/app/favicon.png"

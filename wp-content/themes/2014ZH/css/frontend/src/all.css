@@ -241,6 +241,7 @@ ul{
     font-size: 16px;
     line-height: 24px;
     margin:50px auto;
+    width:70%;
 }
 .article h2{
     font-size: 20px;
@@ -251,6 +252,9 @@ ul{
 
 .article table,.article ul{
     font-size: 14px;
+}
+.article table{
+    width:100%;
 }
 .article p{
     font-size: 14px;
