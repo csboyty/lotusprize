@@ -16,6 +16,7 @@ $newsId=5;
                 <img src="<?php echo get_template_directory_uri(); ?>/images/frontend/app/status1.jpg">
             </li>
             <li>
+                <a class="topicLink" href="http://www.lotusprize.com/2014/archives/710">全部命题汇总，请点击此处</a>
                 <img src="<?php echo get_template_directory_uri(); ?>/images/frontend/app/status2.jpg">
             </li>
             <li>
