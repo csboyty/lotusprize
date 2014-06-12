@@ -13,20 +13,21 @@ $newsId=5;
     <div class="rollImg">
         <ul id="rollImgList" class="rollImgList">
             <li>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/frontend/app/status1.jpg">
+                <img src="<?php echo get_template_directory_uri(); ?>/data/status/status1.jpg">
             </li>
             <li>
                 <a class="topicLink" href="http://www.lotusprize.com/2014en/archives/631">Please Click Here for Full Topics Collection</a>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/frontend/app/status2.jpg">
+                <img class="advertise" num="1" src="<?php echo get_template_directory_uri(); ?>/data/status/status2.jpg">
+                <img class="advertise" num="2" src="<?php echo get_template_directory_uri(); ?>/data/advertise/1.jpg">
             </li>
             <li>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/frontend/app/status3.jpg">
+                <img src="<?php echo get_template_directory_uri(); ?>/data/status/status3.jpg">
             </li>
             <li>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/frontend/app/status4.jpg">
+                <img src="<?php echo get_template_directory_uri(); ?>/data/status/status4.jpg">
             </li>
             <li>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/frontend/app/status5.jpg">
+                <img src="<?php echo get_template_directory_uri(); ?>/data/status/status5.jpg">
             </li>
         </ul>
         <ul id="rollNumberList" class="rollNumberList">
