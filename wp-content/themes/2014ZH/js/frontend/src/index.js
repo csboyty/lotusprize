@@ -33,16 +33,14 @@ var index=(function(){
             },5000);
         },
         rollAdvertise:function(){
-            var count= 2,current=2;
+            var count= 2,current= 2,currentEl=null;
             setInterval(function(){
                 if(current>count){
                     current=1;
                 }
-
-                $(".advertise").eq(current-1).fadeIn(800,function(){
-                    $(".advertise").not($(this)).fadeOut(800);
-                });
-
+                currentEl=$(".advertise").eq(current-1);
+                $(".advertise").hide(400);
+                currentEl.show(400);
                 current++;
 
             },5000);
@@ -145,6 +143,7 @@ $(document).ready(function(){
     //执行一次,这样interVal就有值
     //index.roll();
     index.rollAdvertise();
+
 
     //点击事件
     $("#rollNumberList li").click(function(){
