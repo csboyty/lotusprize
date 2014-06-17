@@ -18,20 +18,35 @@
 
     <div class="content indexContent">
         <h1 class="logo">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/frontend/app/index.gif">
+            <!--<object width="100%" height="300" data="<?php /*echo get_template_directory_uri(); */?>/images/frontend/app/logo.swf">
+                <embed width="100%" height="300"  src="<?php /*echo get_template_directory_uri(); */?>/images/frontend/app/logo.swf"></embed>
+            </object>-->
+            <a href="<?php echo home_url(); ?>">logo</a>
         </h1>
         <ul class="links">
             <li>
-                <a href="http://www.lotusprize.com/2014/">2014</a>
+                <a href="<?php
+                $mainBlog=get_blog_details(2);
+                echo $mainBlog->siteurl;
+                ?>" class="current">2014</a>
             </li>
             <li>
-                <a href="http://www.lotusprize.com/2012/">2012</a>
+                <a href="<?php
+                $mainBlog=get_blog_details(4);
+                echo $mainBlog->siteurl;
+                ?>">2012</a>
             </li>
             <li>
-                <a href="http://www.lotusprize.com/2010/">2010</a>
+                <a href="<?php
+                $mainBlog=get_blog_details(6);
+                echo $mainBlog->siteurl;
+                ?>">2010</a>
             </li>
             <li>
-                <a href="http://www.lotusprize.com/2008/">2008</a>
+                <a href="<?php
+                $mainBlog=get_blog_details(8);
+                echo $mainBlog->siteurl;
+                ?>">2008</a>
             </li>
         </ul>
     </div>

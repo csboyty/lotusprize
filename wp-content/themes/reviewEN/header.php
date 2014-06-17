@@ -35,7 +35,7 @@
 </head>
 <body>
 <div class="wpHeader">
-    <h1>
+    <h1 class="logo">
         <a href="<?php echo home_url(); ?>">logo</a>
     </h1>
     <ul class="rightMenu">

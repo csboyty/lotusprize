@@ -3,11 +3,12 @@ html{
     width: 100%;
 }
 body{
-    margin:0px;
     padding: 0px;
     font-family:"微软雅黑", "黑体", Arial, "Times New Roman", Verdana;
-    color:#b5b5b5;
+    color:#A7A9AC;
     min-width: 1024px;
+    max-width: 1336px;
+    margin:auto;
     background: #fff;
     letter-spacing: 1px;
     font-size: 14px;
@@ -16,19 +17,19 @@ body{
 }
 a{
     text-decoration: none;
-    color: #b5b5b5;
+    color: #A7A9AC;
 }
 a.active{
-    color:#33cc99;
+    color:#00A67F;
 }
 a:hover{
-    color:#FF3399;
+    color:#FFC63E;
 }
 .hidden{
     display: none !important;
 }
 h3{
-    color: #33cc99;
+    color: #FFC63E;
     font-weight: normal;
     font-size: 24px;
 }
@@ -42,31 +43,35 @@ ul{
 *logo
 */
 .logo{
-    width: 275px;
-    height: 52px;
-    margin: 0px auto 20px auto;
+    width: 250px;
+    height: 100px;
+    margin:15px 0px;
     position: relative;
     overflow: hidden;
+    font-size: 0px;
+}
+.logo a{
+    background: url(../../../images/frontend/app/logo.gif) no-repeat;
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
-.logo img{
-    width: 280px;
-    height: 100px;
-    position: absolute;
-    top:-15px;
-    left:-2px;
-}
 /**
 *头部
 */
 .wpHeader{
     background: #fff;
-    height: 130px;
+    height: 145px;
     position: relative;
-    padding-top: 25px;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+}
+.wpMenu{
+    background: #E8E5E2;
+    height: 30px;
+    line-height: 30px;
 }
 .headerMenu{
     display: inline-block;
@@ -77,26 +82,17 @@ ul{
 }
 .headerMenu li a.active{
     cursor:pointer;
-    color:#33cc99;
+    color:#00A67F;
 }
 .headerMenu li a:hover{
     cursor:pointer;
-    color:#FF3399;
-}
-.optMenu{
-    position: absolute;
-    width: auto;
-    right: 50px;
-    bottom:50px;
-}
-.optMenu li{
-    margin-right: 10px;
+    color:#FFC63E;
 }
 .links{
     position: absolute;
     width: auto;
-    right: 20px;
-    bottom:50px;
+    left: 280px;
+    top: 35px;
 }
 .links .linkItem{
     margin-left: 10px;
@@ -109,42 +105,37 @@ ul{
 .links .linkItem a img{
     border: none;
 }
-.wpOptMenu{
+.optMenu{
     width: auto;
     float: right;
     margin-right: 20px;
 }
-.wpOptMenu li{
+.optMenu li{
     margin-left: 20px;
 }
 .mainMenu{
     width:50%;
-    margin-left: 10%;
+    margin-left: 3%;
 }
 .mainMenu li{
     margin-right: 10%;
 }
 .langMenu{
-    width: 20%;
-    margin-left: 15%;
+    position: absolute;
+    width: auto;
+    right: 20px;
+    top: 35px;
 }
 .langMenu li{
-    width: 30%;
-}
-.wpLangMenu{
-    width: 13%;
-    margin-left: 5%;
-}
-.wpLangMenu li{
-    width: 30%;
+    margin-left:30px;
 }
 
 /**
 * 滚动图片
 */
 .rollImg{
-    width: 95%;
-    margin: 20px auto;
+    width: 100%;
+    margin: 0px auto;
     overflow: hidden;
     position: relative;
 }
@@ -177,65 +168,73 @@ ul{
 .rollImg .rollImgList li img{
     width:100%;
 }
-.rollImg .rollNumberList{
-    margin:30px 0px 0px 5%;
+.numberListContainer{
     width:100%;
-    position: relative;
-    font-size: 0px;
-}
-.rollImg .rollNumberList li{
-    display: inline-block;
-    width: auto;
-    margin-right: 5%;
-    font-size: 14px;
-    vertical-align: top;
-    cursor: pointer;
-}
-.rollImg .rollNumberList li.active{
-    color:#33cc99;
-}
-.rollImg .rollNumberList li:hover{
-    color:#FF3399;
-}
-
-.content{
-    padding: 5% 13% 5% 13%;
-    background:#F6F5F4;
-}
-.newsContainer{
-    overflow: hidden;
-    width: 117.5%;
-}
-.newsPanel{
-    width: 200%;
-    position: relative;
-    white-space: nowrap;
-    left: 0px;
-    background: url(../../../images/frontend/app/newsBg.png) no-repeat;
-    background-position: 20% 20px;
-}
-.newsPanel .column{
-    width: 50%;
-    min-height: 400px;
-    box-sizing: border-box;
-    vertical-align: top;
-    display: inline-block;
+    background: #E8E5E2;
+    padding:20px 0px 0px 3%;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    position: relative;
+}
+.scheduleTip{
+    display: inline-block;
+    font-weight: normal;
+    margin:0px;
+    font-size: 32px;
+    width:320px;
+    position: absolute;
+    left:750px;
+    top:0px;
+    line-height: 86px;
+    height: 86px;
+    background: #E8E5E2;
+}
+.rollNumberList{
+    width:800px;
+    margin-right: 320px;
+    vertical-align: top;
+    position: relative;
+    font-size: 0px;
+    border-bottom: 2px solid #FFC63E;
+}
+.rollNumberList li{
+    display: inline-block;
+    width: auto;
+    padding-right: 50px;
+    font-size: 12px;
+    vertical-align: top;
+    cursor: pointer;
+    position: relative;
+    top:5px;
+}
+.rollNumberList li .date{
+    margin:10px 0px 20px 0px;
+}
+.rollNumberList li.active{
+    color:#00A67F;
+    background: url(../../../images/frontend/app/dot.png) no-repeat left bottom;
+}
+.rollNumberList li:hover{
+    color:#FFC63E;
 }
 
-.newsPanel .column:first-child + .column{
-    padding:0px  11% 0px 5%;
+/*
+*内容区域
+*/
+.content{
+    padding: 0% 0 5% 0;
 }
-
+.newsContainer{
+    padding:5% 3% 5% 3%;
+}
 .newsList li{
     height: 48px;
     line-height: 48px;
     font-size: 16px;
 }
 .newsList a{
-    color:#00bc6f;
+    /*color:#00bc6f;*/
     font-size: 14px;
     max-width: 70%;
     overflow: hidden;
@@ -245,7 +244,7 @@ ul{
     overflow: hidden;
 }
 .newsList a:hover{
-    color:#FF3399;
+    color:#FFC63E;
 }
 .newsList .date{
     font-size: 14px;
@@ -261,10 +260,9 @@ ul{
 .article h2{
     font-size: 20px;
     font-weight: normal;
-    color: #33cc99;
+    color: #00A67F;
     text-align: center;
 }
-
 .article table,.article ul{
     font-size: 14px;
 }
@@ -286,7 +284,7 @@ ul{
 .return{
     cursor: pointer;
     font-size: 14px;
-    color: #33cc99;
+    color: #00A67F;
 }
 .pagination{
     margin-top:20px;
@@ -298,76 +296,81 @@ ul{
     font-size: 14px;
 }
 .pagination .page-numbers a{
-    color:#33cc99;
+    color:#00A67F;
 }
 
 /**
 * 章程
 */
-.ruleContent{
-    background: none;
-    width: 80%;
+.ruleContainer{
     padding:0px;
-    margin:100px auto 0px auto;
+    margin-top:30px;
 }
-.leftColumn{
+.ruleContainer .column{
+    background: #E8E5E2;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding:20px;
+}
+.ruleContainer .leftColumn{
     width: 280px;
     position: absolute;
+    text-align: right;
+    padding-top: 25px;
 }
-.leftColumn ul li{
+.ruleContainer .leftColumn ul li{
     margin-bottom:20px;
 }
-.leftColumn ul li a:hover{
-    color:#FF3399;
+.ruleContainer .leftColumn ul li a:hover{
+    color:#FFC63E;
 }
-/*.leftColumn .ruleMenu li:first-child + li{
+.ruleContainer .leftColumn .ruleMenu li{
     margin-top: 100px;
 }
-.leftColumn .ruleMenu li:first-child + li a{
-    color: #33cc99;
-}*/
-.leftColumn .ruleMenu li{
-    margin-top: 100px;
+.ruleContainer .leftColumn .ruleMenu li a{
+    color: #00A67F;
 }
-.leftColumn .ruleMenu li a{
-    color: #33cc99;
-}
-.rightColumn{
-    margin-left: 280px;
-    padding:0px 8% 20px 2%;
+.ruleContainer .rightColumn{
+    padding-top: 1px;
+    margin-left: 310px;
     min-height: 600px;
+    width:600px;
 }
-.rightColumn h3{
+.ruleContainer .rightColumn h3{
     font-size: 18px;
     font-weight: normal;
-    color: #33cc99;
+    color: #00A67F;
+    margin:20px 0px;
 }
-.rightColumn h2{
+.ruleContainer .rightColumn h2{
     font-size: 26px;
     font-weight: normal;
-    color: #33cc99;
+    color: #00A67F;
+    margin:20px 0px;
 }
-.rightColumn h4{
+.ruleContainer .rightColumn h4{
     font-size: 14px;
     font-weight: normal;
-    color: #33cc99;
+    color: #00A67F;
+    margin:20px 0px;
 }
-.rightColumn p{
+.ruleContainer .rightColumn p{
     line-height: 32px;
     font-size: 14px;
+    margin:10px 0px;
 }
 
 /**
 *评委
 */
 .judgeList{
-    padding-bottom: 80px;
     font-size: 0px;
     width: 80%;
     margin:50px auto;
 }
 .judgeList .title{
-    color:#33cc99;
+    color:#00A67F;
     margin-bottom: 20px;
     margin-top:50px ;
     margin-left: 0.83%;
@@ -396,7 +399,7 @@ ul{
 .judgeList .infoContainer{
     position: absolute;
     top:100%;
-    background: #FF3399;
+    background: #FFC63E;
     color:#fff;
     width: 90%;
     height: 90%;
@@ -482,7 +485,7 @@ ul{
     text-indent: 28px;
 }
 .popContent .right .excerpt{
-    color: #33cc99;
+    color: #00A67F;
     text-indent: 0px;
     padding-right:5%;
 }
@@ -492,7 +495,7 @@ ul{
 *页脚
 */
 .footer{
-    color:#33cc99;
+    color:#00A67F;
     background: #F6F5F4;
     padding:20px;
 }
@@ -510,7 +513,7 @@ ul{
     text-align: center;
 }
 ._404Content a{
-    color:#33cc99 ;
+    color:#00A67F ;
 }
 
 

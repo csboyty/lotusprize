@@ -40,7 +40,7 @@ var index=(function(){
                 }
                 currentEl=$(".advertise").eq(current-1);
                 $(".advertise").hide(400);
-                currentEl.show(400);
+                currentEl.show(800);
                 current++;
 
             },5000);

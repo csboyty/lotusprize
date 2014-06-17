@@ -13,8 +13,8 @@ $judgeId=6;
 get_header();
 
 ?>
-<div class="content ruleContent">
-    <div class="leftColumn">
+<div class="content ruleContainer">
+    <div class="leftColumn column">
         <ul>
             <?php
             $posts=get_posts(array('posts_per_page' => -1,  'category' => $ruleId,'order'=> 'DESC', ));

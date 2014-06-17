@@ -39,7 +39,7 @@ get_header();
                         <div class="infoContainer">
                             <div class="info">
                                 <h4><?php echo $post->post_title; ?></h4>
-                                <p><?php echo $post->post_cotent; ?></p>
+                                <p><?php /*echo $post->post_excerpt; */?></p>
                             </div>
                         </div>
                     </a>
