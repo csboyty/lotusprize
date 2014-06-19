@@ -12,7 +12,7 @@ $judgeChildren=get_categories(array("parent"=>$judgeId,"hide_empty"=>false,'orde
 //get_template_part( 'column', "left" );
 get_header();
 ?>
-<div class="content">
+<div class="content judgeContainer">
 
         <?php
         $showDir="";
@@ -20,6 +20,7 @@ get_header();
             $posts=get_posts(array('posts_per_page' => -1,  'category' => $value->term_id ));
 
         ?>
+        <p class="separate">分割带</p>
         <ul class="judgeList">
             <h3 class="title"><?php echo $value->cat_name; ?></h3>
             <?php
