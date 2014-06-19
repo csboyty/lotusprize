@@ -187,7 +187,7 @@ ul{
 .topicLink{
     display: inline-block;
     position: absolute;
-    width: 91px;
+    width: auto;
     font-size: 12px;
     line-height: 24px;
     white-space: nowrap;

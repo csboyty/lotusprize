@@ -17,7 +17,7 @@ $newsId=5;
             </li>
             <li>
                 <a class="topicLink" href="http://www.lotusprize.com/2014en/archives/631">
-                    Days Till Deadline:<span id="deadLine" class="deadLine">0</span>
+                    Days before deadline:<span id="deadLine" class="deadLine">0</span>
                 </a>
                 <img class="advertise" num="1" src="<?php echo get_template_directory_uri(); ?>/data/status/status2.jpg">
                 <img class="advertise" num="2" src="<?php echo get_template_directory_uri(); ?>/data/advertise/1.jpg">

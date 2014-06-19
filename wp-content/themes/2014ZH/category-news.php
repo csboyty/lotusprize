@@ -17,7 +17,7 @@ $newsId=5;
             </li>
             <li>
                 <a class="topicLink" href="http://www.lotusprize.com/2014/archives/710">
-                     距投稿截止日：<span id="deadLine" class="deadLine">0</span>
+                    征稿截止剩余天数：<span id="deadLine" class="deadLine">0</span>
                 </a>
                 <img class="advertise" num="1" src="<?php echo get_template_directory_uri(); ?>/data/status/status2.jpg">
                 <img class="advertise" num="2" src="<?php echo get_template_directory_uri(); ?>/data/advertise/1.jpg">
