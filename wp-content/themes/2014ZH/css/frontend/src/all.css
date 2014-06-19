@@ -160,20 +160,7 @@ ul{
     width:100%;
     position: relative;
 }
-.rollImg .rollImgList li .topicLink{
-    display: inline-block;
-    position: absolute;
-    width: 120px;
-    font-size: 16px;
-    white-space: normal;
-    color: #fff;
-    background: #ffc63e;
-    /* opacity: .8; */
-    /* height: 100px; */
-    top: 28px;
-    right: 0px;
-    padding: 10px;
-}
+
 .rollImg .rollImgList li img{
     width:100%;
 }
@@ -197,6 +184,26 @@ ul{
 .rollImg .rollNumberList li:hover{
     color:#FF3399;
 }
+.topicLink{
+    display: inline-block;
+    position: absolute;
+    width: 91px;
+    font-size: 12px;
+    line-height: 24px;
+    white-space: nowrap;
+    color: #fff;
+    background: #ffc63e;
+    z-index: 100;
+    top: 28px;
+    right: 0px;
+    padding: 10px;
+}
+.deadLine{
+    font-size: 68px;
+    display: block;
+    line-height: 68px;
+}
+
 
 .content{
     padding: 5% 13% 5% 13%;

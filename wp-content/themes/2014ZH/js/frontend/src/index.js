@@ -109,6 +109,12 @@ var index=(function(){
                 }
             });
         },
+        setDeadLine:function(){
+            var deadLineTime=new Date("2014/06/30").getTime();
+            var currentTime=new Date().getTime();
+            var time = Math.ceil((deadLineTime-currentTime) / (1000 * 60 * 60 * 24));
+            $("#deadLine").text(time);
+        },
         initStatus:function(){
             for(var i in status){
                 if(new Date().getTime()<new Date(status[i]).getTime()){
@@ -117,21 +123,28 @@ var index=(function(){
                     break;
                 }
             }
-
+        },
+        init:function(){
+            this.initStatus();
             this.checkLogin();
+            this.setDeadLine();
+            this.windowScroll();
+            this.rollAdvertise();
         }
     }
 })();
 $(document).ready(function(){
-    index.setContentHeight();
 
-    index.initStatus();
+    index.init();
+    //index.setContentHeight();
+
+    //index.initStatus();
 
     $(window).resize(function() {
         index.setContentHeight();
     });
 
-    index.windowScroll();
+    //index.windowScroll();
 
     //滚动事件
     $(window).scroll(function(){
@@ -140,9 +153,9 @@ $(document).ready(function(){
         }
     });
 
-    //执行一次,这样interVal就有值
+
     //index.roll();
-    index.rollAdvertise();
+    //index.rollAdvertise();
 
 
     //点击事件
