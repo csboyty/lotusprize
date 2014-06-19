@@ -109,6 +109,7 @@ ul{
     width: auto;
     float: right;
     margin-right: 20px;
+    margin-left:30px;
 }
 .optMenu li{
     margin-left: 20px;
@@ -121,10 +122,8 @@ ul{
     margin-right: 10%;
 }
 .langMenu{
-    position: absolute;
     width: auto;
-    right: 20px;
-    top: 35px;
+    float: right;
 }
 .langMenu li{
     margin-left:30px;
@@ -151,20 +150,7 @@ ul{
     width:100%;
     position: relative;
 }
-.rollImg .rollImgList li .topicLink{
-    display: inline-block;
-    position: absolute;
-    width: 120px;
-    font-size: 16px;
-    white-space: normal;
-    color: #fff;
-    background: #ffc63e;
-    /* opacity: .8; */
-    /* height: 100px; */
-    top: 28px;
-    right: 0px;
-    padding: 10px;
-}
+
 .rollImg .rollImgList li img{
     width:100%;
 }
@@ -217,6 +203,27 @@ ul{
 }
 .rollNumberList li:hover{
     color:#FFC63E;
+}
+
+.topicLink{
+    display: inline-block;
+    position: absolute;
+    width: 110px;
+    font-size: 12px;
+    white-space: nowrap;
+    color: #fff;
+    background: #ffc63e;
+    top: 0px;
+    right: 0px;
+    padding: 10px;
+}
+.topicLink:hover{
+    color:#fff;
+}
+.deadLine{
+    display: block;
+    font-size:68px ;
+    line-height: 68px;
 }
 
 /*

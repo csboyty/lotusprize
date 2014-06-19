@@ -52,10 +52,9 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/images/frontend/app/iconCumulus.png">
         </a></li>
     </ul>
-    <ul class="langMenu headerMenu" id="langMenu">
-        <li><a href="<?php echo home_url(); ?>" class="active">中文</a></li>
-        <li><a href="<?php echo home_url()."en"; ?>" >English</a></li>
-    </ul>
+    <a class="topicLink" href="http://www.lotusprize.com/2014/archives/710">
+        征稿截止剩余天数：<span id="deadLine" class="deadLine">0</span>
+    </a>
     <div class="wpMenu">
 
         <ul class="mainMenu headerMenu" id="menu">
@@ -100,10 +99,15 @@
             }
             ?>
         </ul>
+
         <ul class="optMenu headerMenu" id="optMenu">
             <li class="itemHome hidden"><a  href="/lp/s/{roleName}">我的芙蓉杯</a></li>
             <li class="itemLogout hidden"><a  href="/lp/s/logout">退出</a></li>
             <li class="itemLogin hidden"><a  href="/lp/s/login">登录</a></li>
+        </ul>
+        <ul class="langMenu headerMenu" id="langMenu">
+            <li><a href="<?php echo home_url(); ?>" class="active">中文</a></li>
+            <li><a href="<?php echo home_url()."en"; ?>" >English</a></li>
         </ul>
     </div>
 </div>
