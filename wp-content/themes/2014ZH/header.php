@@ -19,7 +19,7 @@
     <script src="<?php echo get_template_directory_uri(); ?>/js/frontend/lib/jquery-1.7.2.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/frontend/src/baiduAnalytics.js"></script>
     <!--[if lt IE 9]>
-        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <script src="<?php echo get_template_directory_uri(); ?>/js/frontend/lib/css3-mediaqueries.js"></script>
         <style type="text/css">
             .article img,.article video,.article object,.article embed{
                 margin: auto;
@@ -52,9 +52,9 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/images/frontend/app/iconCumulus.png">
         </a></li>
     </ul>
-    <a class="topicLink" href="http://www.lotusprize.com/2014/archives/710">
+    <span class="deadLineContainer">
         征稿截止剩余天数：<span id="deadLine" class="deadLine">0</span>
-    </a>
+    </span>
     <div class="wpMenu">
 
         <ul class="mainMenu headerMenu" id="menu">

@@ -2,6 +2,7 @@
 $ruleId=7;
 $judgeId=6;
 $currentCat=get_the_category();
+
 //print_r($currentCat);
 if($currentCat[0]->cat_ID==$ruleId){
     //print_r("dddd");
@@ -29,40 +30,32 @@ if($currentCat[0]->cat_ID==$ruleId){
                 if(get_the_content()){
                     the_content();
                 }else{
-                    echo "No detail";
+                    echo "暂无详细资料";
                 }
                 ?>
             </div>
         </div>
 
-    <?php
+        <?php
 
     endwhile;
 }else{
-    //需要获取主循环的内容
     //需要获取主循环的内容
     get_header();
 
     while(have_posts()):the_post();
         ?>
-        <div class="content">
-            <div class="article" id="article">
-                <h2><?php the_title(); ?></h2>
+        <div class="content article">
+            <h2><?php the_title(); ?></h2>
 
-                <?php
-                the_content();
-                ?>
-            </div>
+            <?php
+            the_content();
+            ?>
         </div>
-    <?php
+        <?php
     endwhile;
 
-    get_footer(); ?>
-
-    </body>
-    </html>
-
-<?php
+    get_footer();
 }
 
 ?>

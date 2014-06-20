@@ -11,43 +11,43 @@ $judgeChildren=get_categories(array("parent"=>$judgeId,"hide_empty"=>false,'orde
 //print_r($judgeChildren);
 //get_template_part( 'column', "left" );
 get_header();
-
 ?>
-    <ul class="judgeList">
+<div class="content judgeContainer">
+
         <?php
         $showDir="";
         foreach($judgeChildren as $key=>$value){
             $posts=get_posts(array('posts_per_page' => -1,  'category' => $value->term_id ));
 
         ?>
-        <h3 class="title"><?php echo $value->cat_name; ?></h3>
-        <?php
-            foreach($posts as $post){
+        <p class="separate">分割带</p>
+        <ul class="judgeList">
+            <h3 class="title"><?php echo $value->cat_name; ?></h3>
+            <?php
+                foreach($posts as $post){
 
-                if(has_post_thumbnail($post->ID)){
-                    $thumbnail_id=get_post_thumbnail_id($post_id);
-                    $showDir= wp_get_attachment_image_src($thumbnail_id,"post-thumbnail");
-                    $showDir=$showDir[0];
-                }
-                ?>
+                    if(has_post_thumbnail($post->ID)){
+                        $thumbnail_id=get_post_thumbnail_id($post_id);
+                        $showDir= wp_get_attachment_image_src($thumbnail_id,"post-thumbnail");
+                        $showDir=$showDir[0];
+                    }
+                    ?>
 
-                <li>
-                    <a class="judgeItem" href="<?php echo get_permalink($post->ID); ?>">
-                        <div class="thumb">
-                            <img src="<?php echo $showDir; ?>">
-                        </div>
-                        <div class="infoContainer">
-                            <div class="info">
-                                <h4><?php echo $post->post_title; ?></h4>
-                                <p><?php /*echo $post->post_excerpt; */?></p>
+                    <li>
+                        <a class="judgeItem" href="<?php echo get_permalink($post->ID); ?>">
+                            <div class="thumb">
+                                <img src="<?php echo $showDir; ?>">
                             </div>
-                        </div>
-                    </a>
-                </li>
-
+                            <div class="infoContainer">
+                                <div class="info">
+                                    <h4><?php echo $post->post_title; ?></h4>
+                                    <p><?php /*echo $post->post_excerpt;*/ ?></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
             <?php  };  ?>
+        </ul>
         <?php }; ?>
-    </ul>
+</div>
 <?php get_footer(); ?>
-</body>
-</html>

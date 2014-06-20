@@ -9,7 +9,7 @@
 get_header();
 $newsId=5;
 ?>
-<div class="main">
+
     <div class="rollImg">
         <ul id="rollImgList" class="rollImgList">
             <li>
@@ -30,61 +30,48 @@ $newsId=5;
                 <img src="<?php echo get_template_directory_uri(); ?>/data/status/status5.jpg">
             </li>
         </ul>
+
+    </div>
+    <div class="numberListContainer">
         <ul id="rollNumberList" class="rollNumberList">
-            <li  num="1">
+            <li num="1">
                 <span>Design Discovery</span>
-                <p>3.10-4.30</p>
+                <p class="date">3.10-4.30</p>
             </li>
             <li num="2">
                 <span>Call for Entries</span>
-                <p>5.10-6.30</p>
+                <p class="date">5.10-6.30</p>
             </li>
             <li num="3">
                 <span>Preliminary Assessment</span>
-                <p>7.10-8.1</p>
+                <p class="date">7.10-8.1</p>
             </li>
             <li num="4">
-                <span>Incubation Assessment and Workshop</span>
-                <p>8.5-8.15</p>
+                <span>Incubation Programme</span>
+                <p class="date">8.5-8.15</p>
             </li>
             <li num="5">
                 <span>Final Adjudication</span>
-                <p>10.8-10.10</p>
+                <p class="date">10.8-10.10</p>
             </li>
         </ul>
+        <h2 class="scheduleTip">STEP TO LOTUSPRIZE 2014</h2>
     </div>
-    <div class="content">
-        <h3>News</h3>
-        <div class="newsContainer" id="newsContainer">
-            <div class="newsPanel" id="newsPanel">
-                <div class="column">
-                    <ul id="newsList" class="newsList">
-                        <?php while (have_posts()) : the_post();?>
+    <div class="content newsContainer">
+            <h3 class="newsTitle">News</h3>
 
-                            <li class="hidden">
-                                <a title="<?php the_title(); ?>" href="<?php the_permalink(); ?>">
-                                    <?php echo get_the_date("Y-m-d"); ?>
-                                    &nbsp;&nbsp;&nbsp;
-                                    <?php the_title(); ?></a>
-                            </li>
-                        <?php
-                        endwhile;
-                        ?>
-                    </ul>
+            <ul id="newsList" class="newsList">
+                <?php while (have_posts()) : the_post();?>
 
-                </div>
-                <div class="column" id="articleColumn">
-                    <span class="return" >return</span>
-                    <div class="article" id="article">
-
-                    </div>
-                    <span class="return" >return</span>
-                </div>
-            </div>
-        </div>
-
+                    <li class="hidden">
+                        <a title="<?php the_title(); ?>" href="<?php the_permalink(); ?>">
+                            <?php echo get_the_date("Y-m-d"); ?>
+                            &nbsp;&nbsp;&nbsp;
+                            <?php the_title(); ?></a>
+                    </li>
+                <?php
+                    endwhile;
+                ?>
+            </ul>
     </div>
-</div>
 <?php get_footer(); ?>
-</body>
-</html>

@@ -130,6 +130,7 @@ var index=(function(){
             this.windowScroll();
             this.rollAdvertise();
             this.checkLogin();
+            this.initStatus();
         }
     }
 })();

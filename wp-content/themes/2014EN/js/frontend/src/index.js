@@ -6,7 +6,7 @@
  * To change this template use File | Settings | File Templates.
  */
 var index=(function(){
-    var currentNumber=2;//目前的滚动数字
+    var currentNumber=2;//目前的滚动数字，首次进入的滚动应该是2
     var liCount=5;//总共的图片数量,灵活一点的话是在页面初始化后获取
     var interVal=null;//记录setInterval的返回值
     var status={
@@ -40,7 +40,7 @@ var index=(function(){
                 }
                 currentEl=$(".advertise").eq(current-1);
                 $(".advertise").hide(400);
-                currentEl.show(400);
+                currentEl.show(800);
                 current++;
 
             },5000);
@@ -58,6 +58,7 @@ var index=(function(){
             rollImgEl.animate({
                 "left":-(currentNumber-1)*100+"%"
             },2000);
+
 
             el.addClass("active");
 
@@ -129,6 +130,7 @@ var index=(function(){
             this.windowScroll();
             this.rollAdvertise();
             this.checkLogin();
+            this.initStatus();
         }
     }
 })();
@@ -155,6 +157,7 @@ $(document).ready(function(){
     //执行一次,这样interVal就有值
     //index.roll();
     //index.rollAdvertise();
+
 
     //点击事件
     $("#rollNumberList li").click(function(){
@@ -209,9 +212,8 @@ $(document).ready(function(){
     });
 
     $("#closePopWindow").click(function(){
-        $("#popWindow,").addClass("hidden");
+        $("#popWindow").addClass("hidden");
         $("#blackout").hide();
-
         return false;
     });
 });

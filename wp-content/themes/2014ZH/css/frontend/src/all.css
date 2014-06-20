@@ -20,16 +20,16 @@ a{
     color: #A7A9AC;
 }
 a.active{
-    color:#FFC63E;
+    color:#ffdf00;
 }
 a:hover{
-    color:#FFC63E;
+    color:#ffdf00;
 }
 .hidden{
     display: none !important;
 }
 h3{
-    color: #FFC63E;
+    color: #ffdf00;
     font-weight: normal;
     font-size: 24px;
 }
@@ -69,7 +69,7 @@ ul{
     -moz-box-sizing: border-box;
 }
 .wpMenu{
-    background: #E8E5E2;
+    background: #f7f8f8;
     height: 30px;
     line-height: 30px;
 }
@@ -82,20 +82,20 @@ ul{
 }
 .headerMenu li a.active{
     cursor:pointer;
-    color:#FFC63E;
+    color:#ffdf00;
 }
 .headerMenu li a:hover{
     cursor:pointer;
-    color:#FFC63E;
+    color:#ffdf00;
 }
 .links{
     position: absolute;
     width: auto;
     left: 280px;
-    top: 35px;
+    top: 45px;
 }
 .links .linkItem{
-    margin-left: 10px;
+    margin-right: 20px;
 }
 .links .linkItem a{
     width:auto;
@@ -156,7 +156,7 @@ ul{
 }
 .numberListContainer{
     width:100%;
-    background: #E8E5E2;
+    background: #f7f8f8;
     padding:20px 0px 0px 3%;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -167,22 +167,21 @@ ul{
     display: inline-block;
     font-weight: normal;
     margin:0px;
-    font-size: 32px;
-    width:320px;
+    font-size: 19px;
+    width:auto;
     position: absolute;
-    left:790px;
+    left:750px;
     top:0px;
     line-height: 88px;
     height: 100%;
-    background: #E8E5E2;
+    background: #f7f8f8;
 }
 .rollNumberList{
     width:800px;
-    margin-right: 320px;
     vertical-align: top;
     position: relative;
     font-size: 0px;
-    border-bottom: 2px solid #FFC63E;
+    border-bottom: 2px solid #ffdf00;
 }
 .rollNumberList li{
     display: inline-block;
@@ -198,29 +197,41 @@ ul{
     margin:10px 0px 20px 0px;
 }
 .rollNumberList li.active{
-    color:#FFC63E;
+    color:#ffdf00;
     background: url(../../../images/frontend/app/dot.png) no-repeat left bottom;
 }
 .rollNumberList li:hover{
-    color:#FFC63E;
+    color:#ffdf00;
 }
-
 .topicLink{
     display: inline-block;
     position: absolute;
-    width: 110px;
+    width: 120px;
     font-size: 12px;
-    white-space: nowrap;
+    line-height: 24px;
+    white-space: normal;
     color: #fff;
-    background: #ffc63e;
-    top: 0px;
+    background: #ffdf00;
+    z-index: 100;
+    top: 28px;
     right: 0px;
     padding: 10px;
 }
 .topicLink:hover{
     color:#fff;
 }
-.deadLine{
+.deadLineContainer{
+    display: inline-block;
+    position: absolute;
+    width: auto;
+    font-size: 12px;
+    white-space: nowrap;
+    color: #ffdf00;
+    top: 0px;
+    right: 0px;
+    padding: 10px;
+}
+.deadLineContainer .deadLine{
     display: block;
     font-size:68px ;
     line-height: 68px;
@@ -251,7 +262,7 @@ ul{
     overflow: hidden;
 }
 .newsList a:hover{
-    color:#FFC63E;
+    color:#ffdf00;
 }
 .newsList .date{
     font-size: 14px;
@@ -314,7 +325,7 @@ ul{
     margin-top:30px;
 }
 .ruleContainer .column{
-    background: #E8E5E2;
+    background: #f7f8f8;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -330,7 +341,7 @@ ul{
     margin-bottom:20px;
 }
 .ruleContainer .leftColumn ul li a:hover{
-    color:#FFC63E;
+    color:#ffdf00;
 }
 .ruleContainer .leftColumn .ruleMenu li{
     margin-top: 100px;
@@ -415,7 +426,7 @@ ul{
 .judgeList .infoContainer{
     position: absolute;
     top:100%;
-    background: #FFC63E;
+    background: #ffdf00;
     color:#fff;
     width: 90%;
     height: 90%;

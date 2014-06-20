@@ -1,6 +1,7 @@
 <div class="blackout" id="blackout">
     <span class="text">Loading...</span>
 </div>
+
 <!--显示协议-->
 <div id="popWindow" class="popWindow hidden">
     <div class="toolbar">
@@ -10,6 +11,9 @@
 
     </div>
 </div>
+
 <div class="footer">
     <p>&copy;Hunan Provincial Science & Technology Department</p>
 </div>
+</body>
+</html>

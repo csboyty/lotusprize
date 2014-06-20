@@ -21,6 +21,6 @@
 </div>
 
 <div class="_404Content">
-    Oops!The page is not found,back to<a href="<?php echo home_url(); ?>" class="backHome">home</a>
+    Oops!您访问的页面不存在，3秒后将自动跳转到<a href="<?php echo home_url(); ?>" class="backHome">首页</a>
 </div>
 </body>

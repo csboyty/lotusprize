@@ -11,6 +11,7 @@
     <meta charset="utf-8">
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php wp_title("|",true,"right"); ?></title>
     <link type="text/css" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/frontend/src/all.css">
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/frontend/app/favicon.png"
@@ -18,27 +19,28 @@
     <script src="<?php echo get_template_directory_uri(); ?>/js/frontend/lib/jquery-1.7.2.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/frontend/src/baiduAnalytics.js"></script>
     <!--[if lt IE 9]>
-
-    <style type="text/css">
-        .article img,.article video,.article object,.article embed{
-            margin: auto;
-            display: block;
-            border: none;
-        }
-        .article video,.article object,.article embed{
-            width:592px;
-            height:333px;
-        }
-    </style>
+        <script src="<?php echo get_template_directory_uri(); ?>/js/frontend/lib/css3-mediaqueries.js"></script>
+        <style type="text/css">
+            .article img,.article video,.article object,.article embed{
+                margin: auto;
+                display: block;
+                border: none;
+            }
+            .article video,.article object,.article embed{
+                width:592px;
+                height:333px;
+            }
+        </style>
     <![endif]-->
     <script src="<?php echo get_template_directory_uri(); ?>/js/frontend/src/index.js"></script>
 </head>
 <body>
 <div class="wpHeader">
     <h1 class="logo">
-        <a href="<?php echo home_url(); ?>">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/frontend/app/rotate.gif">
-        </a>
+        <!--<object height="100" width="200" data="<?php /*echo get_template_directory_uri(); */?>/images/frontend/app/logo.swf">
+            <embed height="100" width="200" src="<?php /*echo get_template_directory_uri(); */?>/images/frontend/app/logo.swf"></embed>
+        </object>-->
+        <a href="<?php echo home_url(); ?>">logo</a>
     </h1>
     <ul class="links headerMenu">
         <li class="linkItem icsidItem">
@@ -48,16 +50,24 @@
         </li>
         <li class="linkItem cumulItem"><a target="_blank" href="http://www.cumulusassociation.org/component/content/1921-call-for-entries-the-4th-lotusprize-international-design-competition/152">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/frontend/app/iconCumulus.png">
-            </a></li>
+        </a></li>
     </ul>
+    <span class="deadLineContainer">
+        Days before deadline:<span id="deadLine" class="deadLine">0</span>
+    </span>
     <div class="wpMenu">
 
         <ul class="mainMenu headerMenu" id="menu">
             <?php
             $main_items = wp_get_nav_menu_items($mainMenuId);
+
             //获取文章/分类展示页的category，is_category可以判断在当前分类页是否属于某一分类
             $currentCat=get_the_category();
             $isHome=false;
+            //print_r($currentCat);
+
+            //print_r(is_home()?"111":"222");
+
             $currentCatId=0;
             if(is_home()||is_category($newsId)){
                 //$currentCatId=$newsId;
@@ -86,18 +96,18 @@
                         echo '<li><a href="' . $menu_item->url . '">' . $menu_item->title . '</a></li>';
                     }
                 }
-
             }
             ?>
         </ul>
-        <ul class="wpLangMenu headerMenu" id="langMenu">
-            <li><a href="<?php echo substr(home_url(),0,-2); ?>" >中文</a></li>
-            <li><a href="<?php echo home_url(); ?>" class="active">English</a></li>
-        </ul>
-        <ul class="wpOptMenu headerMenu" id="optMenu">
-            <li class="itemHome hidden"><a  href="/lp/s/{roleName}?_lang=en">My Lotusprize</a></li>
+
+        <ul class="optMenu headerMenu" id="optMenu">
+            <li class="itemHome hidden"><a  href="/lp/s/{roleName}">My Lotusprize</a></li>
             <li class="itemLogout hidden"><a  href="/lp/s/logout">Logout</a></li>
-            <li class="itemLogin hidden"><a  href="/lp/s/login?_lang=en">Login</a></li>
+            <li class="itemLogin hidden"><a  href="/lp/s/login">Login</a></li>
+        </ul>
+        <ul class="langMenu headerMenu" id="langMenu">
+            <li><a href="<?php echo home_url(); ?>" >中文</a></li>
+            <li><a href="<?php echo home_url()."en"; ?>" class="active">English</a></li>
         </ul>
     </div>
 </div>
