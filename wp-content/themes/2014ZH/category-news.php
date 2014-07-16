@@ -40,7 +40,7 @@ $newsId=5;
             </li>
             <li num="2">
                 <span>作品征集</span>
-                <p class="date">5.10-6.30</p>
+                <p class="date">5.10-7.7</p>
             </li>
             <li num="3">
                 <span>创新设计优秀奖评审</span>

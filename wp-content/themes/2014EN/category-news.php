@@ -40,7 +40,7 @@ $newsId=5;
             </li>
             <li num="2">
                 <span>Call for Entries</span>
-                <p class="date">5.10-6.30</p>
+                <p class="date">5.10-7.7</p>
             </li>
             <li num="3">
                 <span>Preliminary Assessment</span>

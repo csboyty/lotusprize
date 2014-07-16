@@ -11,7 +11,7 @@ var index=(function(){
     var interVal=null;//记录setInterval的返回值
     var status={
         1:"2014/04/30",
-        2:"2014/06/30",
+        2:"2014/07/07",
         3:"2014/08/01",
         4:"2014/08/15",
         5:"2014/10/10"
@@ -110,14 +110,14 @@ var index=(function(){
             });
         },
         setDeadLine:function(){
-            var deadLineTime=new Date("2014/06/30").getTime();
+            var deadLineTime=new Date(status["2"]).getTime()+1000*60*60*24;
             var currentTime=new Date().getTime();
             var time = Math.ceil((deadLineTime-currentTime) / (1000 * 60 * 60 * 24));
             $("#deadLine").text(time);
         },
         initStatus:function(){
             for(var i in status){
-                if(new Date().getTime()<new Date(status[i]).getTime()){
+                if(new Date().getTime()<new Date(status[i]).getTime()+1000*60*60*24){
                     $("#rollNumberList li[num='"+i+"'] ").addClass("active");
                     $("#rollImgList").css("left",-(i-1)*100+"%");
                     break;

@@ -101,13 +101,13 @@
         </ul>
 
         <ul class="optMenu headerMenu" id="optMenu">
-            <li class="itemHome hidden"><a  href="/lp/s/{roleName}">My Lotusprize</a></li>
+            <li class="itemHome hidden"><a  href="/lp/s/{roleName}?_lang=en">My Lotusprize</a></li>
             <li class="itemLogout hidden"><a  href="/lp/s/logout">Logout</a></li>
-            <li class="itemLogin hidden"><a  href="/lp/s/login">Login</a></li>
+            <li class="itemLogin hidden"><a  href="/lp/s/login?_lang=en">Login</a></li>
         </ul>
         <ul class="langMenu headerMenu" id="langMenu">
-            <li><a href="<?php echo home_url(); ?>" >中文</a></li>
-            <li><a href="<?php echo home_url()."en"; ?>" class="active">English</a></li>
+            <li><a href="<?php echo substr(home_url(),0,-2); ?>" >中文</a></li>
+            <li><a href="<?php echo home_url(); ?>" class="active">English</a></li>
         </ul>
     </div>
 </div>
