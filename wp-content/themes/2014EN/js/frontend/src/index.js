@@ -12,8 +12,8 @@ var index=(function(){
     var status={
         1:"2014/04/30",
         2:"2014/07/07",
-        3:"2014/08/01",
-        4:"2014/08/15",
+        3:"2014/08/12",
+        4:"2014/09/20",
         5:"2014/10/10"
     };
     return {
@@ -77,10 +77,9 @@ var index=(function(){
             }
         },
         setContentHeight:function(){
-            if(document.body.scrollHeight<=$("body").height()){
-                $(".content").css("minHeight",$("body").height()-290);
+            if($("body").height()<=$(window).height()){
+                $(".content").css("minHeight",$(window).height()-290);
             }
-
         },
         windowScroll:function(){
             var lis=$("#newsList .hidden");
@@ -125,7 +124,7 @@ var index=(function(){
             }
         },
         init:function(){
-            this.setDeadLine();
+            //this.setDeadLine();
             this.setContentHeight();
             this.windowScroll();
             this.rollAdvertise();

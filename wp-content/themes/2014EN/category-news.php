@@ -24,6 +24,9 @@ $newsId=5;
                 <img src="<?php echo get_template_directory_uri(); ?>/data/status/status3.jpg">
             </li>
             <li>
+                <a class="awardsLink" href="http://www.lotusprize.com/lp/s/gallery?_lang=en">
+                    We welcome the public to supervise the originality of the entries
+                </a>
                 <img src="<?php echo get_template_directory_uri(); ?>/data/status/status4.jpg">
             </li>
             <li>
@@ -44,11 +47,11 @@ $newsId=5;
             </li>
             <li num="3">
                 <span>Preliminary Assessment</span>
-                <p class="date">7.10-8.1</p>
+                <p class="date">7.10-8.12</p>
             </li>
             <li num="4">
                 <span>Incubation Programme</span>
-                <p class="date">8.5-8.15</p>
+                <p class="date">8.20-9.20</p>
             </li>
             <li num="5">
                 <span>Final Adjudication</span>

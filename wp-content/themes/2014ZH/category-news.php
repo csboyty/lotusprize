@@ -24,6 +24,7 @@ $newsId=5;
                 <img src="<?php echo get_template_directory_uri(); ?>/data/status/status3.jpg">
             </li>
             <li>
+                <a class="awardsLink" href="http://www.lotusprize.com/lp/s/gallery">获奖作品详情 / 欢迎大家对获奖作品的原创性进行监督</a>
                 <img src="<?php echo get_template_directory_uri(); ?>/data/status/status4.jpg">
             </li>
             <li>
@@ -44,11 +45,11 @@ $newsId=5;
             </li>
             <li num="3">
                 <span>创新设计优秀奖评审</span>
-                <p class="date">7.10-8.1</p>
+                <p class="date">7.10-8.12</p>
             </li>
             <li num="4">
                 <span>孵化项目评审及工作营</span>
-                <p class="date">8.5-8.15</p>
+                <p class="date">8.20-9.20</p>
             </li>
             <li num="5">
                 <span>终评与成果推广</span>
