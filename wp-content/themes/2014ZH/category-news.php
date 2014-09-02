@@ -18,7 +18,7 @@ $newsId=5;
             <li>
                 <a class="topicLink" href="http://www.lotusprize.com/2014/archives/710">全部命题汇总，请点击此处</a>
                 <img class="advertise" num="1" src="<?php echo get_template_directory_uri(); ?>/data/status/status2.jpg">
-                <img class="advertise" num="2" src="<?php echo get_template_directory_uri(); ?>/data/advertise/1.jpg">
+                <!--<img class="advertise" num="2" src="<?php /*echo get_template_directory_uri(); */?>/data/advertise/1.jpg">-->
             </li>
             <li>
                 <img src="<?php echo get_template_directory_uri(); ?>/data/status/status3.jpg">

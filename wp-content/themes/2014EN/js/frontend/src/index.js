@@ -127,7 +127,7 @@ var index=(function(){
             //this.setDeadLine();
             this.setContentHeight();
             this.windowScroll();
-            this.rollAdvertise();
+            //this.rollAdvertise();
             this.checkLogin();
             this.initStatus();
         }

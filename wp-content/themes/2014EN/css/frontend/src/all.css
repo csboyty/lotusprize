@@ -310,6 +310,10 @@ ul{
     display: block;
     border: none;
 }
+.article object,.article embed{
+    width:592px;
+    height:333px;
+}
 .return{
     cursor: pointer;
     font-size: 14px;

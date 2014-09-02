@@ -18,7 +18,7 @@ $newsId=5;
             <li>
                 <a class="topicLink" href="http://www.lotusprize.com/2014en/archives/631">Please Click Here for Full Topics Collection</a>
                 <img class="advertise" num="1" src="<?php echo get_template_directory_uri(); ?>/data/status/status2.jpg">
-                <img class="advertise" num="2" src="<?php echo get_template_directory_uri(); ?>/data/advertise/1.jpg">
+                <!--<img class="advertise" num="2" src="<?php /*echo get_template_directory_uri(); */?>/data/advertise/1.jpg">-->
             </li>
             <li>
                 <img src="<?php echo get_template_directory_uri(); ?>/data/status/status3.jpg">
