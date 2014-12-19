@@ -27,8 +27,8 @@
                 border: none;
             }
             .article video,.article object,.article embed{
-                width:592px;
-                height:333px;
+                width:592px !important;
+                height:333px !important;
             }
         </style>
     <![endif]-->
@@ -52,9 +52,9 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/images/frontend/app/iconCumulus.png">
         </a></li>
     </ul>
-    <span class="deadLineContainer">
+    <!--<span class="deadLineContainer">
         Days before deadline:<span id="deadLine" class="deadLine">0</span>
-    </span>
+    </span>-->
     <div class="wpMenu">
 
         <ul class="mainMenu headerMenu" id="menu">

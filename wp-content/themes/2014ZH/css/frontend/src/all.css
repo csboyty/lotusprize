@@ -305,15 +305,15 @@ ul{
     text-indent: 28px;
  }
 .article img,.article video,.article object,.article embed{
-    max-width: 100%;
-    height:auto;
+    max-width: 100% !important;
+    height:auto !important;
     margin: auto;
     display: block;
     border: none;
 }
 .article object,.article embed{
-    width:592px;
-    height:333px;
+    width:592px !important;
+    height:333px !important;
 }
 .return{
     cursor: pointer;
